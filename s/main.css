@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: #111;
+    text-align: center;
+}
+nav {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+    padding: 1rem 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    font-weight: 700;
+}
+.nav-links a {
+    margin-left: 0.5rem;
+}
+nav .logo {
+    font-size: 1.3rem;
+}
+header {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+header, section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+body {
+    background: #eee1e0;
+}
+header, article {
+    background: linear-gradient(135deg, #d9e0eb, #eee1e0);
+}
+#home section {
+    background: white;
+}
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+footer p {
+    margin: .5rem auto;
+}
+footer svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+}
+h1, h2, h3, h4 {
+    margin: 0 auto 1rem;
+    max-width: 900px;
+}
+h1 {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 2.0rem;
+}
+section p {
+    font-size: 1.5rem;
+}
+p {
+    margin: 1rem auto;
+    max-width: 700px;
+}
+a {
+    font-weight: 700;
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+pre[class*="language-"] {
+    display: inline-block;      /* allow centering */
+    text-align: left;           /* keep code left-aligned inside */
+    border-radius: 10px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+pre[class*="language-"] code {
+    font-size: .9rem;
+}
+.screenshot {
+    max-width: 100%;
+    height: auto;
+}
+.brand, a:hover {
+    color: #cc8635;
+}
+.cta {
+    display: inline-flex;
+    gap: 1rem;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.7rem;
+    transition: background 0.2s ease;
+    background: #eee;
+    color: #515d71;
+    margin: 0 .5rem;
+}
+.cta .icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+.cta:hover {
+    background: #ddd;
+}
+svg {
+    fill: currentColor;
+}
+.mobile {
+    display: none;
+}
+pre[class*="language-"] {
+	box-shadow: -1px 0 0 0 #cc8635, 0 0 0 1px #dfdfdf !important;
+	border-left: 10px solid #cc8635 !important;
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+    color: #cc8635 !important;
+}
+body > svg {
+    display: none;
+}
+.trademarks {
+    font-size: .7rem;
+    color: #999;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
