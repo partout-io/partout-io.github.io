@@ -146,6 +146,9 @@ pre[class*="language-"] {
 body > svg {
     display: none;
 }
+#copyright {
+    margin-top: 1.2rem;
+}
 .trademarks {
     font-size: .8rem;
     line-height: 1.2rem;
