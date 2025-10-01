@@ -5,11 +5,21 @@
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    color: #111;
+    color: #000;
     text-align: center;
 }
 .brand {
     font-family: "Poetsen";
+    color: #cc8635;
+}
+a {
+    color: #666;
+    font-weight: 700;
+    text-decoration: none;
+}
+a:hover {
+    color: #cc8635;
+    text-decoration: underline;
 }
 nav {
     background: white;
@@ -86,14 +96,6 @@ p {
     margin: 1rem auto;
     max-width: 700px;
 }
-a {
-    font-weight: 700;
-    color: #666;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
 pre[class*="language-"] {
     display: inline-block;      /* allow centering */
     text-align: left;           /* keep code left-aligned inside */
@@ -108,9 +110,6 @@ pre[class*="language-"] code {
 .screenshot {
     max-width: 100%;
     height: auto;
-}
-.brand, a:hover {
-    color: #cc8635;
 }
 .cta {
     display: inline-flex;
