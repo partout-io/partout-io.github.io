@@ -2,14 +2,14 @@
     font-family: "Poetsen";
     src: url("poetsen-one.ttf")
 }
-.brand {
-    font-family: "Poetsen";
-}
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
     color: #111;
     text-align: center;
+}
+.brand {
+    font-family: "Poetsen";
 }
 nav {
     background: white;
