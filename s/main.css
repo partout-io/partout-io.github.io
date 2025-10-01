@@ -10,7 +10,12 @@ body {
 }
 .brand {
     font-family: "Poetsen";
+}
+.accent {
     color: #cc8635;
+}
+.logo {
+    font-size: 2rem;
 }
 a {
     color: #666;
@@ -18,13 +23,12 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #cc8635;
     text-decoration: underline;
 }
 nav {
     background: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
-    padding: 1rem 2rem; 
+    padding: .5rem 2rem;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -33,11 +37,9 @@ nav {
     z-index: 1000;
     font-weight: 700;
 }
-.nav-links a {
+nav a {
+    color: #000;
     margin-left: 0.5rem;
-}
-nav .logo {
-    font-size: 1.3rem;
 }
 header {
     padding-top: 4rem;
