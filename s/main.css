@@ -80,9 +80,11 @@ footer svg {
     height: 1.5rem;
     padding: .5rem;
 }
+h1, p {
+    max-width: 700px;
+}
 h1, h2, h3, h4 {
     margin: 0 auto 1rem;
-    max-width: 900px;
 }
 h1 {
     font-size: 3.5rem;
@@ -99,7 +101,6 @@ section p {
 }
 p {
     margin: 1rem auto;
-    max-width: 700px;
 }
 pre[class*="language-"] {
     display: inline-block;      /* allow centering */
