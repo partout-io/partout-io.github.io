@@ -29,7 +29,7 @@ a:hover {
 nav {
     background: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -39,8 +39,7 @@ nav {
     font-weight: 700;
 }
 nav a {
-    color: #000;
-    margin-left: 0.5rem;
+    color: black;
 }
 header {
     padding-top: 4rem;
