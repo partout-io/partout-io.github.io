@@ -100,8 +100,7 @@ pre[class*="language-"] code {
     align-items: center;
     font-weight: 700;
     font-size: 1.7rem;
-    transition: background 0.2s ease;
-    background: #eee;
+    background: #ddd;
     color: #515d71;
     margin: 0 .5rem;
 }
