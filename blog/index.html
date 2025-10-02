@@ -19,19 +19,19 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Partout" />
-    <meta property="og:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
-    <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta property="og:url" content="https://partout.io/" />
+    <meta property="og:title" content="Stories, challenges, and educational articles." />
+    <meta property="og:description" content="Stories, challenges, and educational articles." />
+    <meta property="og:url" content="https://partout.io/blog/" />
 
     <!-- Twitter -->
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@keeshux" />
-    <meta name="twitter:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
-    <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta name="twitter:url" content="https://partout.io/" />
+    <meta name="twitter:title" content="Stories, challenges, and educational articles." />
+    <meta name="twitter:description" content="Stories, challenges, and educational articles." />
+    <meta name="twitter:url" content="https://partout.io/blog/" />
 
-    <link rel="canonical" href="https://partout.io/" />
+    <link rel="canonical" href="https://partout.io/blog/" />
     <link rel="author" href="https://davidederosa.com" />
 
     <link rel="stylesheet" href="/s/main.css?1759396291" />
@@ -73,50 +73,74 @@ gtag('config', 'G-89X200F7CB');
     </symbol>
 </svg>
 
-        <main id="home">
+        <main class="page">
     <header>
-        <h1><a href="/" class="brand accent">Partout</a> is the <em>easiest</em> way to build cross-platform tunnel apps.</h1>
-        <p>Imagine that you could set up a VPN in a few lines so that you can focus on your product.</p>
-        <pre><code class="language-swift">
-// WireGuard server at home
-let homeVPN = try registry.module(fromPath: "home.conf")
+        <h1 class="brand"><a href="/">Partout</a></h1>
 
-let builder = Profile.Builder(name: "Home Server", modules: [homeVPN])
-let profile = try builder.tryBuild()
-
-try await tunnel.install(profile, connect: true)
-        </code></pre>
-        <p class="buttons">
-            <a href="https://github.com/partout-io" class="cta">
-                <svg class="icon"><use href="#icon-github"></use></svg>GitHub
-            </a>
-            <a href="/blog" class="cta">
-                <svg class="icon"><use href="#icon-rss"></use></svg>Blog
-            </a>
-        </p>
+        <h2>Stories, challenges, and educational articles.</h2>
     </header>
     <section>
-        <h2>Fueling the <br class="mobile" /><a href="https://passepartoutvpn.app">Passepartout</a> client.</h2>
-        <p>Passepartout is the go-to app for VPN and privacy, and showcases the use of Partout for hundreds of thousands of happy customers every day.</p>
-        <div class="desktop">
-            <a href="https://passepartoutvpn.app"><img width="820" height="564" src="s/passepartout.png" class="screenshot" /></a>
-        </div>
-    </section>
-    <section class="middle">
-        <h2>Naturally for iOS, macOS,<br class="mobile" /> and tvOS.</h2>
-        <p>With the convenience of the Swift Package Manager, the integration of Partout in Swift projects literally takes seconds.</p>
-        <pre><code class="language-swift">
-dependencies: [
-    .package(url: "https://github.com/partout-io/partout", branch: "master")
-],
-targets: [
-    .target(name: "MyApp", dependencies: ["partout"])
-]
-        </code></pre>
-    </section>
-    <section>
-        <h2>Soon for Android, Windows,<br class="mobile" /> and Linux.</h2>
-        <p>A Swift-backed C ABI and JNI bindings for Android are in the works. Partout embraces the challenge of porting a Swift library successfully outside the Apple ecosystem.</p>
+        <section id="blog-posts" class="all">
+    <ul>
+        
+        <li>
+            <h3><a href="/2025/09/update-q3-2025/">Update: Q3 2025</a></h3>
+            <h4>Sep 08, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/07/discontinuing-support-for-the-protonvpn-provider/">Discontinuining support for the ProtonVPN provider</a></h3>
+            <h4>Jul 18, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/07/modern-cross-platform-encryption/">Modern cross-platform encryption</a></h3>
+            <h4>Jul 11, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/06/the-mac-app-is-now-available-outside-the-app-store/">The Mac app is now available outside the App Store</a></h3>
+            <h4>Jun 02, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/04/introducing-the-javascript-api/">Introducing the JavaScript API</a></h3>
+            <h4>Apr 24, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/04/porting-passepartout-to-windows/">Porting Passepartout to Windows</a></h3>
+            <h4>Apr 14, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/03/who-cares-about-performance/">Who cares about performance?</a></h3>
+            <h4>Mar 25, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/03/the-roadmap-for-2025/">The roadmap for 2025</a></h3>
+            <h4>Mar 17, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/03/rewriting-passepartout-for-v3/">Rewriting Passepartout for v3</a></h3>
+            <h4>Mar 11, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/03/deploying-to-the-app-store-the-cost-you-didn-t-expect/">Deploying to the App Store: The cost you didn't expect</a></h3>
+            <h4>Mar 03, 2025</h4>
+        </li>
+        
+        <li>
+            <h3><a href="/2025/03/the-path-to-an-obscure-crash/">The path to an obscure crash</a></h3>
+            <h4>Mar 02, 2025</h4>
+        </li>
+        
+    </ul>
+</section>
+
     </section>
 </main>
 

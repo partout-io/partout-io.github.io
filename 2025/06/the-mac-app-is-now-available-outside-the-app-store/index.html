@@ -19,19 +19,19 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Partout" />
-    <meta property="og:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
-    <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta property="og:url" content="https://partout.io/" />
+    <meta property="og:title" content="The Mac app is now available outside the App Store" />
+    <meta property="og:description" content="The Mac app is now available outside the App Store" />
+    <meta property="og:url" content="https://partout.io/2025/06/the-mac-app-is-now-available-outside-the-app-store/" />
 
     <!-- Twitter -->
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@keeshux" />
-    <meta name="twitter:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
-    <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta name="twitter:url" content="https://partout.io/" />
+    <meta name="twitter:title" content="The Mac app is now available outside the App Store" />
+    <meta name="twitter:description" content="The Mac app is now available outside the App Store" />
+    <meta name="twitter:url" content="https://partout.io/2025/06/the-mac-app-is-now-available-outside-the-app-store/" />
 
-    <link rel="canonical" href="https://partout.io/" />
+    <link rel="canonical" href="https://partout.io/2025/06/the-mac-app-is-now-available-outside-the-app-store/" />
     <link rel="author" href="https://davidederosa.com" />
 
     <link rel="stylesheet" href="/s/main.css?1759396291" />
@@ -73,51 +73,74 @@ gtag('config', 'G-89X200F7CB');
     </symbol>
 </svg>
 
-        <main id="home">
-    <header>
-        <h1><a href="/" class="brand accent">Partout</a> is the <em>easiest</em> way to build cross-platform tunnel apps.</h1>
-        <p>Imagine that you could set up a VPN in a few lines so that you can focus on your product.</p>
-        <pre><code class="language-swift">
-// WireGuard server at home
-let homeVPN = try registry.module(fromPath: "home.conf")
+        <main>
+    <h1 class="brand"><a href="/">Partout</a></h1>
 
-let builder = Profile.Builder(name: "Home Server", modules: [homeVPN])
-let profile = try builder.tryBuild()
+    <article class="post post-full" itemscope itemtype="https://schema.org/Article">
+        <header>
+            <h2 itemprop="name">The Mac app is now available outside the App Store</h2>
+            <p class="post-date" itemprop="datepublished">Jun 2, 2025</p>
+        </header>
+        <section class="post-body">
+            <p>Today, I’m thrilled to announce that the Mac app can be <a href="/#app-mac">finally downloaded without the App Store</a>, and soon even via the <a href="https://github.com/orgs/passepartoutvpn/discussions/1244">Homebrew Cask</a>. It took serious work for it to take off, but after a few weeks of daily usage it seems to behave as expected.</p>
 
-try await tunnel.install(profile, connect: true)
-        </code></pre>
-        <p class="buttons">
-            <a href="https://github.com/partout-io" class="cta">
-                <svg class="icon"><use href="#icon-github"></use></svg>GitHub
-            </a>
-            <a href="/blog" class="cta">
-                <svg class="icon"><use href="#icon-rss"></use></svg>Blog
-            </a>
-        </p>
-    </header>
-    <section>
-        <h2>Fueling the <br class="mobile" /><a href="https://passepartoutvpn.app">Passepartout</a> client.</h2>
-        <p>Passepartout is the go-to app for VPN and privacy, and showcases the use of Partout for hundreds of thousands of happy customers every day.</p>
-        <div class="desktop">
-            <a href="https://passepartoutvpn.app"><img width="820" height="564" src="s/passepartout.png" class="screenshot" /></a>
-        </div>
-    </section>
-    <section class="middle">
-        <h2>Naturally for iOS, macOS,<br class="mobile" /> and tvOS.</h2>
-        <p>With the convenience of the Swift Package Manager, the integration of Partout in Swift projects literally takes seconds.</p>
-        <pre><code class="language-swift">
-dependencies: [
-    .package(url: "https://github.com/partout-io/partout", branch: "master")
-],
-targets: [
-    .target(name: "MyApp", dependencies: ["partout"])
-]
-        </code></pre>
-    </section>
-    <section>
-        <h2>Soon for Android, Windows,<br class="mobile" /> and Linux.</h2>
-        <p>A Swift-backed C ABI and JNI bindings for Android are in the works. Partout embraces the challenge of porting a Swift library successfully outside the Apple ecosystem.</p>
-    </section>
+<p>There are still limitations in that the app, for now, doesn’t support payments. This means that paid features are not available (yet), but they will be introduced at a later time:</p>
+
+<ul>
+  <li>Apple TV</li>
+  <li>iCloud</li>
+  <li>Network settings</li>
+  <li>On-demand</li>
+  <li>OTP</li>
+  <li>Providers</li>
+</ul>
+
+<p>You can read a side story about the development of this new, standalone Mac app on my website.</p>
+
+
+            
+            <p><em>Keep reading on <a href="https://davidederosa.com/2025/05/a-true-case-for-dependency-injection/">davidederosa.com</a></em></p>
+            
+            <p><a href="/blog">Back to index</a></p>
+        </section>
+
+        
+        
+
+        
+        <section id="blog-posts" class="related">
+            <h3>Related posts</h3>
+            <ul>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/09/update-q3-2025/">Update: Q3 2025</a></span>
+                    <span class="post-date">Sep 08, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/07/discontinuing-support-for-the-protonvpn-provider/">Discontinuining support for the ProtonVPN provider</a></span>
+                    <span class="post-date">Jul 18, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/07/modern-cross-platform-encryption/">Modern cross-platform encryption</a></span>
+                    <span class="post-date">Jul 11, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/04/introducing-the-javascript-api/">Introducing the JavaScript API</a></span>
+                    <span class="post-date">Apr 24, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/03/the-roadmap-for-2025/">The roadmap for 2025</a></span>
+                    <span class="post-date">Mar 17, 2025</span>
+                </li>
+                
+            </ul>
+        </section>
+        
+    </article>
 </main>
 
         <footer>

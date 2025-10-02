@@ -1,0 +1,254 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Partout is the easiest way to build cross-platform tunnel apps.</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Davide De Rosa" />
+    <meta name="description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="Partout">
+
+    <!-- OpenGraph -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Partout" />
+    <meta property="og:title" content="The path to an obscure crash" />
+    <meta property="og:description" content="The path to an obscure crash" />
+    <meta property="og:url" content="https://partout.io/2025/03/the-path-to-an-obscure-crash/" />
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@keeshux" />
+    <meta name="twitter:title" content="The path to an obscure crash" />
+    <meta name="twitter:description" content="The path to an obscure crash" />
+    <meta name="twitter:url" content="https://partout.io/2025/03/the-path-to-an-obscure-crash/" />
+
+    <link rel="canonical" href="https://partout.io/2025/03/the-path-to-an-obscure-crash/" />
+    <link rel="author" href="https://davidederosa.com" />
+
+    <link rel="stylesheet" href="/s/main.css?1759396291" />
+    <link rel="stylesheet" href="/s/main-mobile.css?1759396291" media="only screen and (max-width: 600px)" />
+
+    <meta property="og:image" content="https://partout.io/s/partout.png?1759396291" />
+    <meta name="twitter:image" content="https://partout.io/s/partout.png?1759396291" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/s/favicon.png?1759396291" />
+    <link rel="apple-touch-icon" href="/s/apple-touch-icon.png?1759396291" />
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89X200F7CB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-89X200F7CB');
+</script>
+
+
+</head>
+
+    <body id="top">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <symbol id="icon-github" viewBox="0 0 97.6 96">
+        <path class="st0" d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
+                     c-13.6,2.9-16.4-5.9-16.4-5.9c-2.2-5.7-5.4-7.2-5.4-7.2c-4.4-3,0.3-3,0.3-3c4.9,0.3,7.5,5.1,7.5,5.1c4.4,7.5,11.4,5.4,14.2,4.1
+                     c0.4-3.2,1.7-5.4,3.1-6.6c-10.8-1.1-22.2-5.4-22.2-24.3c0-5.4,1.9-9.8,5-13.2c-0.5-1.2-2.2-6.3,0.5-13c0,0,4.1-1.3,13.4,5.1
+                     c3.9-1.1,8.1-1.6,12.2-1.6s8.3,0.6,12.2,1.6c9.3-6.4,13.4-5.1,13.4-5.1c2.7,6.8,1,11.8,0.5,13c3.2,3.4,5,7.8,5,13.2
+                     c0,18.9-11.4,23.1-22.3,24.3c1.8,1.5,3.3,4.5,3.3,9.1c0,6.6-0.1,11.9-0.1,13.5c0,1.3,0.9,2.9,3.3,2.4C83.6,89.4,97.6,71,97.6,49.2
+                     C97.7,22,75.8,0,48.9,0z"/>
+    </symbol>
+    <symbol id="icon-rss" viewBox="-271 273 256 256">
+        <path d="M-271,360v48.9c31.9,0,62.1,12.6,84.7,35.2c22.6,22.6,35.1,52.8,35.1,84.8v0.1h49.1c0-46.6-19-88.7-49.6-119.4 C-182.2,379-224.4,360.1-271,360z"/>
+        <path d="M-237,460.9c-9.4,0-17.8,3.8-24,10s-10,14.6-10,24c0,9.3,3.8,17.7,10,23.9c6.2,6.1,14.6,9.9,24,9.9s17.8-3.7,24-9.9 s10-14.6,10-23.9c0-9.4-3.8-17.8-10-24C-219.2,464.7-227.6,460.9-237,460.9z"/>
+        <path d="M-90.1,348.1c-46.3-46.4-110.2-75.1-180.8-75.1v48.9C-156.8,322-64.1,414.9-64,529h49C-15,458.4-43.7,394.5-90.1,348.1z"/>
+    </symbol>
+</svg>
+
+        <main>
+    <h1 class="brand"><a href="/">Partout</a></h1>
+
+    <article class="post post-full" itemscope itemtype="https://schema.org/Article">
+        <header>
+            <h2 itemprop="name">The path to an obscure crash</h2>
+            <p class="post-date" itemprop="datepublished">Mar 2, 2025</p>
+        </header>
+        <section class="post-body">
+            <p>One month after its first, painful release, Passepartout v3 is close to being stable.</p>
+
+<p>However, a couple of regressions were still haunting me.</p>
+
+<p>Here I want to describe the absurd journey into one of them, that started with a report <a href="https://github.com/passepartoutvpn/passepartout/issues/1204">from GitHub</a>, and <a href="https://www.reddit.com/r/passepartout/comments/1j0lbqa/not_open_in_sonoma_any_idea/">one from Reddit</a>. Both users were reporting that the Mac app was crashing on launch.</p>
+
+<p>The reports led me to think that the regression was caused by the macOS version, or the CPU architecture, as both users were using an Intel-based machine.</p>
+
+<h3 id="the-xcode-organizer">The Xcode Organizer</h3>
+
+<p>I had several (unhelpful) crashes in the Xcode Organizer confirming the issue:</p>
+
+<div class="h-scrolling">
+    <img alt="Xcode Organizer" src="/s/posts/2025-03-03-01.png" />
+</div>
+
+<p>Looking further into some crashes, I could spot a few SIGILL (Illegal Hardware Instruction) that reinforced the idea of a platform-related issue. Add to that, one of the threads had intense Core Data + CloudKit activity ongoing. It must be Core Data, I thought, given that Passepartout performs its sync precisely when the app launches.</p>
+
+<p><em>Doubt #1: how can the app launch at all if the arch is unsupported?</em></p>
+
+<p><em>Doubt #2: is the Core Data stack trace relevant? Is it the thread that is actually crashing?</em></p>
+
+<h3 id="never-read-crash-reports-only-once">Never read crash reports only once</h3>
+
+<p>Passepartout is a privacy-oriented app. There is no external framework e.g. Firebase to help with crash resolution, so Xcode is the only technical resource at disposal. Plus the patient support from the affected users.</p>
+
+<p>Eventually, Core Data was a distraction. Every report was crashing on “Thread 0”, i.e. the main thread. There were also crashes from macOS 15 and ARM64. Fewer, but non-zero.</p>
+
+<p>This stack trace shed some light in that the injected AppDelegate could be the culprit. But where? And why?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Thread 0 Crashed:
+0   Passepartout                    0x00000001029bb154 0x102764000 + 2453844
+1   Passepartout                    0x00000001029baf6c 0x102764000 + 2453356
+2   Passepartout                    0x00000001029bb83c 0x102764000 + 2455612
+3   Passepartout                    0x00000001029ba6ac 0x102764000 + 2451116
+4   Passepartout                    0x00000001029b66d4 0x102764000 + 2434772
+5   Passepartout                    0x000000010276d0d4 0x102764000 + 37076
+6   Passepartout                    0x000000010276c868 0x102764000 + 34920
+7   libdispatch.dylib               0x000000018ab68658 _dispatch_client_callout + 20 (object.m:576)
+8   libdispatch.dylib               0x000000018ab69ea0 _dispatch_once_callout + 32 (once.c:52)
+9   Passepartout                    0x000000010276b2ac 0x102764000 + 29356
+10  Passepartout                    0x000000010276b2f0 0x102764000 + 29424
+11  Passepartout                    0x000000010276b3c0 0x102764000 + 29632
+12  SwiftUI                         0x00000001b977a934 FallbackDelegateBox.delegate.getter + 68 (FallbackDelegateBox.swift:36)
+13  SwiftUI                         0x00000001b9e8cea8 specialized NSApplicationDelegateAdaptor.wrappedValue.getter + 156 (FallbackDelegates_Mac.swift:93)
+...
+</code></pre></div></div>
+
+<h3 id="reproducing-the-crash-pt-1">Reproducing the crash (pt. 1)</h3>
+
+<p>Assuming that the AppDelegate was doing something wrong, there was even a much bigger issue: I could not reproduce the crash on my machine. I realized, though, that a friend of mine had an Intel MacBook with macOS 14, so I asked for his help.</p>
+
+<p>He gave me access via AnyDesk to push ad hoc builds to the machine. The latest app version crashed consistently. Off to a good start. At that point, I spent a few hours trying to exclude potentially offending parts from the launch code, sadly to no avail. Consider that any change in the code implied archiving and sending a build via AnyDesk to test it. It was exhausting, and the afternoon led nowhere.</p>
+
+<h3 id="reproducing-the-crash-pt-2">Reproducing the crash (pt. 2)</h3>
+
+<p>I decide to give a shot to virtualization. Most crashes came from macOS 14, and not necessarily from Intel machines, so this could work. These were the steps:</p>
+
+<ul>
+  <li>Get <a href="https://mac.getutm.app/">UTM</a> to run a VM on Mac. <em>Highly recommended!</em></li>
+  <li>Download a restore image for Sonoma (~14GB)</li>
+  <li>Regenerate the provisioning profile with the VM UDID</li>
+  <li>Send the development build via a shared folder to the VM</li>
+</ul>
+
+<p>The app crashes. Hooray!</p>
+
+<h3 id="git-to-the-rescue">Git to the rescue</h3>
+
+<p>Time to locate where the regression was introduced. I rebuilt the app for each commit that sounded relevant, and after 10-20 builds, I found out that the crash was introduced in <a href="https://github.com/passepartoutvpn/passepartout/pull/1200">this pull request</a> about the light/dark mode picker in the app preferences. WTF?!</p>
+
+<p>It turns out, the widely used <a href="https://developer.apple.com/documentation/appkit/nsapp"><code class="language-plaintext highlighter-rouge">NSApp</code> singleton</a> is an <strong>implicitly unwrapped optional</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@MainActor
+var NSApp: NSApplication!
+</code></pre></div></div>
+
+<p>and it was therefore used unsafely in this bit of the PR:</p>
+
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fpassepartoutvpn%2Fpassepartout%2Fblob%2Fv3.1.1%2FPackages%2FApp%2FSources%2FUILibrary%2FBusiness%2FAppearanceManager.swift%23L66-73&amp;style=default&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on"></script>
+
+<h3 id="a-race-condition-about-nsapp">A race condition about NSApp</h3>
+
+<p>It’s finally revealed that, very early in a Mac app lifecycle, <code class="language-plaintext highlighter-rouge">NSApp</code> may be nil. This was more often the case on macOS 14 than 15, but still a hideous race condition.</p>
+
+<p>Here goes the simplified stack call:</p>
+
+<ul>
+  <li>main</li>
+  <li>AppDelegate.init</li>
+  <li>AppearanceManager.init</li>
+  <li>AppearanceManager.systemAppearance.didSet</li>
+  <li>AppearanceManager.apply()</li>
+  <li>NSApp.appearance = …</li>
+</ul>
+
+<p>In the last call, <code class="language-plaintext highlighter-rouge">NSApp</code> may be nil and implicitly unwrapped, leading to the crash.</p>
+
+<h3 id="lessons-learned">Lessons learned</h3>
+
+<p>This was one of those bugs that make you question everything—platform differences, architecture quirks, even Core Data conspiracies—before revealing a simple yet insidious root cause: a race condition with <code class="language-plaintext highlighter-rouge">NSApp</code>.</p>
+
+<p>The takeaway? Even well-documented singletons aren’t always safe to assume as non-nil. And when debugging obscure crashes, patience and a systematic approach (plus a good VM setup) can make all the difference.</p>
+
+<p>Passepartout v3.1.5 <a href="https://github.com/passepartoutvpn/passepartout/pull/1224">will handle this case properly</a>, ensuring that <code class="language-plaintext highlighter-rouge">NSApp</code> is accessed only when it’s actually available. Hopefully, that’s one less obscure crash lurking in the shadows.</p>
+
+<p>To Apple and Swift: isn’t it about time to discourage/deprecate the use of implicitly unwrapped optionals?</p>
+
+            
+            <p><em>Keep reading on <a href="https://davidederosa.com/2025/03/the-path-to-an-obscure-crash/">davidederosa.com</a></em></p>
+            
+            <p><a href="/blog">Back to index</a></p>
+        </section>
+
+        
+        
+
+        
+        <section id="blog-posts" class="related">
+            <h3>Related posts</h3>
+            <ul>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/07/modern-cross-platform-encryption/">Modern cross-platform encryption</a></span>
+                    <span class="post-date">Jul 11, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/04/introducing-the-javascript-api/">Introducing the JavaScript API</a></span>
+                    <span class="post-date">Apr 24, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/04/porting-passepartout-to-windows/">Porting Passepartout to Windows</a></span>
+                    <span class="post-date">Apr 14, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/03/who-cares-about-performance/">Who cares about performance?</a></span>
+                    <span class="post-date">Mar 25, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/03/rewriting-passepartout-for-v3/">Rewriting Passepartout for v3</a></span>
+                    <span class="post-date">Mar 11, 2025</span>
+                </li>
+                
+            </ul>
+        </section>
+        
+    </article>
+</main>
+
+        <footer>
+    <p class="links">
+        <a href="https://github.com/partout-io"><svg class="icon"><use href="#icon-github"></use></svg></a>
+    </p>
+    <p id="copyright">Copyright (c) 2025 <a href="https://davidederosa.com">Davide De Rosa</a></p>
+    <div class="trademarks">
+        OpenVPN is a registered trademark of OpenVPN, Inc.<br />
+        "WireGuard" and the "WireGuard" logo are registered trademarks of Jason A. Donenfeld<br />
+    </div>
+</footer>
+
+    </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-coy-without-shadows.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-swift.min.js"></script>
+
+</html>
