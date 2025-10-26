@@ -6,7 +6,6 @@ body {
     margin: 0;
     font-family: system-ui, sans-serif;
     color: #000;
-    background: linear-gradient(135deg, #e5eaf2, #f6eeed);
 }
 body > svg {
     display: none;
@@ -54,17 +53,27 @@ header {
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
-main {
+.column {
     max-width: 700px;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 h1 {
     font-size: 3.5rem;
 }
 h2 {
     font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
 }
 header p {
     font-size: 2rem;
@@ -198,4 +207,8 @@ article {
 .post-body p {
     overflow-x: auto;
     overflow-y: hidden;
+}
+
+#license-tiers {
+    margin: 2rem 0;
 }

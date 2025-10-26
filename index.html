@@ -34,13 +34,13 @@
     <link rel="canonical" href="https://partout.io/" />
     <link rel="author" href="https://davidederosa.com" />
 
-    <link rel="stylesheet" href="/s/main.css?1760906429" />
-    <link rel="stylesheet" href="/s/main-mobile.css?1760906429" media="only screen and (max-width: 600px)" />
+    <link rel="stylesheet" href="/s/main.css?1761470454" />
+    <link rel="stylesheet" href="/s/main-mobile.css?1761470454" media="only screen and (max-width: 600px)" />
 
-    <meta property="og:image" content="https://partout.io/s/partout.png?1760906429" />
-    <meta name="twitter:image" content="https://partout.io/s/partout.png?1760906429" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/s/favicon.png?1760906429" />
-    <link rel="apple-touch-icon" href="/s/apple-touch-icon.png?1760906429" />
+    <meta property="og:image" content="https://partout.io/s/partout.png?1761470454" />
+    <meta name="twitter:image" content="https://partout.io/s/partout.png?1761470454" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/s/favicon.png?1761470454" />
+    <link rel="apple-touch-icon" href="/s/apple-touch-icon.png?1761470454" />
 
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-89X200F7CB"></script>
@@ -73,21 +73,22 @@ gtag('config', 'G-89X200F7CB');
     </symbol>
 </svg>
 
-        <main id="home">
+        <main id="home" class="column">
     <header>
         <h1><a href="/" class="brand accent">Partout</a> is the <em>easiest</em> way to build cross-platform tunnel apps.</h1>
         <p>Imagine that you could set up a VPN in a few lines so that you can focus on your product.</p>
+        <p>Use Partout <a href="/license">in your apps now</a>.</p>
         <pre><code class="language-swift">
 // WireGuard server at home
 let homeVPN = try registry.module(fromPath: "home.conf")
 
 let builder = Profile.Builder(name: "Home Server", modules: [homeVPN])
-let profile = try builder.tryBuild()
+let profile = try builder.build()
 
 try await tunnel.install(profile, connect: true)
         </code></pre>
         <p class="buttons">
-            <a href="https://github.com/partout-io" class="cta">
+            <a href="https://github.com/partout-io/partout" class="cta">
                 <svg class="icon"><use href="#icon-github"></use></svg>GitHub
             </a>
             <a href="/blog" class="cta">
@@ -126,7 +127,7 @@ targets: [
 
         <footer>
     <p class="links">
-        <a href="https://github.com/partout-io"><svg class="icon"><use href="#icon-github"></use></svg></a>
+        <a href="https://github.com/partout-io/partout"><svg class="icon"><use href="#icon-github"></use></svg></a>
     </p>
     <p id="copyright">Copyright (c) 2025 <a href="https://davidederosa.com">Davide De Rosa</a></p>
     <div class="trademarks">
