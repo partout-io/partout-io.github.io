@@ -1,8 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2025-10-28T20:19:29+01:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">Update: Q3 2025</title><link href="https://partout.io/2025/09/update-q3-2025/" rel="alternate" type="text/html" title="Update: Q3 2025" /><published>2025-09-08T00:00:00+02:00</published><updated>2025-09-08T00:00:00+02:00</updated><id>https://partout.io/2025/09/update-q3-2025</id><content type="html" xml:base="https://partout.io/2025/09/update-q3-2025/"><![CDATA[<p>This post starts a trend of quarterly updates about Passepartout. Being close to the end of Q3, this is mostly an overview of what I’ve done in the recent months, with an outlook on what I’m doing next.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2025-11-04T15:50:52+01:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">Update: Q4 2025</title><link href="https://partout.io/2025/11/update-q4-2025/" rel="alternate" type="text/html" title="Update: Q4 2025" /><published>2025-11-04T00:00:00+01:00</published><updated>2025-11-04T00:00:00+01:00</updated><id>https://partout.io/2025/11/update-q4-2025</id><content type="html" xml:base="https://partout.io/2025/11/update-q4-2025/"><![CDATA[<p>The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.</p>
+
+<h2 id="remote-configuration">Remote configuration</h2>
+
+<p>A few months ago, I introduced the use of remote <a href="https://martinfowler.com/articles/feature-toggles.html">feature flags</a> in Passepartout. This was a game-changer to avoid disruption when making potentially dangerous changes to the app behavior, and allowed me to make huge leaps forward when it comes to the cross-platform initiative.</p>
+
+<p>During September and October, I went through the activation of the new OpenVPN and WireGuard cross-platform implementations under the hood, which from time to time led to inevitable bugs. This time, though, I could turn off the faulty code instantly without going through Apple review. The approach sped up the internal app evolution immensely, and the upcoming 3.6.0 should wrap up the most difficult stage of porting Passepartout to new platforms, which was the VPN layer.</p>
+
+<p>Thanks to all the kind users that helped me resolve the bugs that emerged along the way. I couldn’t make it without your support.</p>
+
+<h2 id="android-mvp">Android MVP</h2>
+
+<p>This goal alone should shed light on those cross-platform toggles in Preferences &gt; Advanced that some users may have noticed recently in Passepartout.</p>
+
+<p>Together with remote configurations, those toggles allowed me to live-test the new cross-platform implementations of the OpenVPN/WireGuard layers. If things went really wrong, turning off the remote configuration would immediately restore operation. Rinse and repeat until stability. The result of this process is however amazing, because it’s the living proof that Passepartout <em>will</em> work outside of the Apple platforms without going through long and flaky beta phases.</p>
+
+<p>That’s why a stable 3.6.0 would mean that things are finally aligned to start the foundations of non-Apple apps, and <strong>Passepartout for Android</strong> is the first one in my list. We’re talking about a <em>very</em> minimal app here, but last summer I’ve done enough tests to confirm that the VPN functionality of Partout <a href="https://www.reddit.com/r/passepartout/comments/1n3l592/hey_i_made_it_work_on_android/">works on Android</a>. Windows and Linux are planned for the first half of 2026, but take it with a grain of salt, nothing is set in stone.</p>
+
+<h2 id="interoperability">Interoperability</h2>
+
+<p>Partout already operates on data structures that are very friendly to import/export operations, but Passepartout didn’t have a UI that exposed them. Version 3.6.0 will introduce a few features for that matter, specifically:</p>
+
+<ul>
+  <li><strong>Export a profile</strong> in a human-readable Partout/Passepartout JSON format, also suitable for import.</li>
+  <li><strong>Share a profile</strong> via AirDrop or any other available means.</li>
+  <li><strong>Import a profile via text or QR</strong>, to increase feature-parity with the official WireGuard app in particular.</li>
+  <li><strong>Copy modules</strong> across profiles, as <a href="https://github.com/orgs/partout-io/discussions/1258">discussed here</a>.</li>
+</ul>
+
+<p>Sharing buttons will be available through the “iCloud and Sharing” paywall, a feature included in all the “Core” and “Complete” packages.</p>
+
+<p>Going forward, the JSON format will be the universal standard for all the Partout/Passepartout apps, and regardless of the target OS. I like the idea of promoting a custom file format as a crucial step towards brand-awareness. It goes without saying, other protocol-specific formats keep being supported for import, and later versions will also be able to export single modules like OpenVPN (as .ovpn) and WireGuard (as .conf).</p>
+
+<h2 id="farewell-to-openvpn-compression">Farewell to OpenVPN compression</h2>
+
+<p>Compression support will be removed from OpenVPN in December 2025 as per the <a href="https://openvpn.net/security-advisory/the-voracle-attack-vulnerability/">VORACLE</a> vulnerability. OpenVPN Inc. has deprecated compression for years, and any decently sized VPN provider shouldn’t be using compression at the time being. Some users may still be affected in legacy environments, but this is non-negotiable.</p>
+
+<p>Therefore, by 2026, compression will be gone for good in Passepartout. Make sure to update your server settings accordingly, or encourage your providers to not use compression in case they do.</p>
+
+<h2 id="wireguard-in-providers">WireGuard in providers</h2>
+
+<p>Let’s get this straight. Providers are the <em>most</em> annoying feature to maintain in Passepartout, to the point that sometimes I regret having introduced it (heh). Two months ago, I was about to add the WireGuard integration to providers, but then I had to take a step back because the current implementation of the Passepartout providers bears an excessive amount of complexity compared to the value that it offers.</p>
+
+<p>So, this had to be taken more carefully to prevent progressive rot of the codebase. The providers in general will be re-thought and simplified, once again, and only after that will the WireGuard integration be reconsidered. For what it’s worth, I’ll try my best to meet <a href="https://mullvad.net/it/blog/removing-openvpn-15th-january-2026">the Mullvad deadline</a>.</p>
+
+<p>If you have suggestions about how you would integrate providers in Passepartout, please <a href="https://www.reddit.com/r/passepartout/">post them on Reddit</a>.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><summary type="html"><![CDATA[The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.]]></summary></entry><entry><title type="html">Update: Q3 2025</title><link href="https://partout.io/2025/09/update-q3-2025/" rel="alternate" type="text/html" title="Update: Q3 2025" /><published>2025-09-08T00:00:00+02:00</published><updated>2025-09-08T00:00:00+02:00</updated><id>https://partout.io/2025/09/update-q3-2025</id><content type="html" xml:base="https://partout.io/2025/09/update-q3-2025/"><![CDATA[<p>This post starts a trend of quarterly updates about Passepartout. Being close to the end of Q3, this is mostly an overview of what I’ve done in the recent months, with an outlook on what I’m doing next.</p>
 
 <h2 id="rebranding-to-partout">Rebranding to <em>Partout</em></h2>
 
-<p>Passepartout will not change its name, but it will be part of a broader project named after its backbone: <em>Partout</em>. Partout is the <a href="https://github.com/partout-io/partout">Swift library</a>, now also cross-platform, of which Passepartout aims to be an elegant showcase. Easier to pronounce, shorter to type, the library I’m building is the very heart of Passepartout, and aims to provide a comprehensive, portable framework to create tunneling software. This website will soon reflect this new direction, I hope you’ll like it.</p>
+<p>Passepartout will not change its name, but it will be part of a broader project named after its backbone: <em>Partout</em>. Partout is the [Swift library][https://github.com/partout-io/partout], now also cross-platform, of which Passepartout aims to be an elegant showcase. Easier to pronounce, shorter to type, the library I’m building is the very heart of Passepartout, and aims to provide a comprehensive, portable framework to create tunneling software. This website will soon reflect this new direction, I hope you’ll like it.</p>
 
 <h2 id="cross-platform-is-real">Cross-platform is REAL!</h2>
 
@@ -216,10 +261,4 @@
 
 <p>This is the single measure you want to focus on when considering a big architectural redesign: the time you save in the long run must dramatically compensate for the effort of rewriting. With this mantra, good design will be the natural consequence. Because good design, ultimately, is meant to save development time.</p>
 
-<p>The best code of your software is the one you forget about, the one you don’t need to touch ever again.</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="refactoring" /><category term="planning" /><summary type="html"><![CDATA[For software to live a long life, it must grow together with our experience. If our skills improve at a faster pace than we maintain our software, its design will start to drift away from our standards and expectations. If we let the gap increase for too long, it will eventually be impossible to catch up, and we’ll end up hating our creations.]]></summary></entry><entry><title type="html">Deploying to the App Store: The cost you didn’t expect</title><link href="https://partout.io/2025/03/deploying-to-the-app-store-the-cost-you-didn-t-expect/" rel="alternate" type="text/html" title="Deploying to the App Store: The cost you didn’t expect" /><published>2025-03-03T00:00:00+01:00</published><updated>2025-03-03T00:00:00+01:00</updated><id>https://partout.io/2025/03/deploying-to-the-app-store-the-cost-you-didn-t-expect</id><content type="html" xml:base="https://partout.io/2025/03/deploying-to-the-app-store-the-cost-you-didn-t-expect/"><![CDATA[<p>Passepartout has had a <a href="https://github.com/partout-io/passepartout/actions/runs/13551048532">solid and unique CI/CD workflow</a> for years, from Git commits straight to the App Store. For iPhone, iPad, Mac, and Apple TV.</p>
-
-<p>I dare to say, automated releases are hardly (if <em>ever</em>) seen in open-source *OS apps.</p>
-
-<p><a href="https://docs.fastlane.tools/">fastlane</a>, created by <a href="https://krausefx.com/">Felix Krause</a>, and <a href="https://github.com/features/actions">GitHub Actions</a> helped me immensely with the fast turnaround of Passepartout releases. In the era of LLMs, you have no excuses to waste time for not using these incredible tools.</p>
-
-<p>Let me show why CI/CD is one of the most important and underestimated aspects of making indie software, or software in general.</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="ci/cd" /><summary type="html"><![CDATA[Passepartout has had a solid and unique CI/CD workflow for years, from Git commits straight to the App Store. For iPhone, iPad, Mac, and Apple TV.]]></summary></entry></feed>
+<p>The best code of your software is the one you forget about, the one you don’t need to touch ever again.</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="refactoring" /><category term="planning" /><summary type="html"><![CDATA[For software to live a long life, it must grow together with our experience. If our skills improve at a faster pace than we maintain our software, its design will start to drift away from our standards and expectations. If we let the gap increase for too long, it will eventually be impossible to catch up, and we’ll end up hating our creations.]]></summary></entry></feed>
