@@ -19,19 +19,19 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Partout" />
-    <meta property="og:title" content="Modern cross-platform encryption" />
+    <meta property="og:title" content="2026: One year later" />
     <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta property="og:url" content="https://partout.io/2025/07/modern-cross-platform-encryption/" />
+    <meta property="og:url" content="https://partout.io/2026/01/2026-one-year-later/" />
 
     <!-- Twitter -->
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@keeshux" />
-    <meta name="twitter:title" content="Modern cross-platform encryption" />
+    <meta name="twitter:title" content="2026: One year later" />
     <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta name="twitter:url" content="https://partout.io/2025/07/modern-cross-platform-encryption/" />
+    <meta name="twitter:url" content="https://partout.io/2026/01/2026-one-year-later/" />
 
-    <link rel="canonical" href="https://partout.io/2025/07/modern-cross-platform-encryption/" />
+    <link rel="canonical" href="https://partout.io/2026/01/2026-one-year-later/" />
     <link rel="author" href="https://davidederosa.com" />
 
     <link rel="stylesheet" href="/s/main.css?1767555457" />
@@ -78,26 +78,83 @@ gtag('config', 'G-89X200F7CB');
 
     <article class="post post-full" itemscope itemtype="https://schema.org/Article">
         <header>
-            <h2 itemprop="name">Modern cross-platform encryption</h2>
-            <p class="post-date" itemprop="datepublished">Jul 11, 2025</p>
+            <h2 itemprop="name">2026: One year later</h2>
+            <p class="post-date" itemprop="datepublished">Jan 4, 2026</p>
         </header>
         <section class="post-body">
-            <p>As mentioned <a href="/2025/04/porting-passepartout-to-windows/">in an earlier post</a>, I’ve invested a good part of the recent months in porting Passepartout on non-Apple platforms. Version 3.5.4 quietly brings to life the first milestone of this initiative, which is opting into <em>modern cryptography</em>.</p>
+            <h2 id="2025-was-hard">2025 was HARD</h2>
 
-<p><img src="/s/posts/2025-07-13-01.png" alt="Snapshot of the new preference" /></p>
+<p>Last year, I published two posts about <a href="/2025/03/rewriting-passepartout-for-v3/">the reasons for Passepartout v3</a> and the <a href="/2025/03/the-roadmap-for-2025/">challenging two months</a> it took to recover the app stability after its first release.</p>
 
-<p>By enabling the “Modern cryptography” preference, Passepartout will prefer the new cross-platform implementations over the historical Apple-only code. This is an experimental feature today, which means that connectivity might still be unstable, but the payoff is a dramatic boost in networking performance, more features, and prompt bugfixes.</p>
+<p>There’s been 51 releases in 2025, about one per week, and not because I deem regular updates necessary per se. In fact, weekly app updates with fake changelogs typically suggest corporate BS.</p>
 
-<h2 id="a-way-to-support-cross-platform-development">A way to support cross-platform development</h2>
+<p>In my case, I refactored <em>so many</em> 1000s of lines of sensitive code that the small-to-transparent updates were my way to avoid catastrophes. It’s easy to spot regressions in short development cycles, and the new release strategy has proven to be very effective throughout the year.</p>
 
-<p>Testing modern cryptography today is a great way to support the project, as Passepartout will default to modern cryptography on non-Apple platforms. Switching to it and providing feedback will contribute to a robust Windows/Linux/Android MVP in the future.</p>
+<h2 id="100-open-source-software-oss">100% Open-Source Software (OSS)</h2>
 
-<p>The feature is available to everybody, free and paying customers.</p>
+<p>At some point during the year, I decided to make <strong>Partout fully open-source</strong> again. The goal was for it to showcase multiple aspects of free software development, including:</p>
 
-<p>You can read articles on my website about how I’m making Passepartout and its backend, <a href="https://github.com/partout-io/partout">Partout</a>, a cross-platform application.</p>
+<ul>
+  <li>An open-source project that is <strong>financially sustainable</strong>.</li>
+  <li><strong>Reproducible builds</strong> in Passepartout CI/CD.</li>
+  <li>Not only coding, also <a href="https://github.com/orgs/partout-io/projects?query=is%3Aopen"><strong>planning in public</strong></a>.</li>
+  <li>Being a reference project for <a href="https://davidederosa.com/cross-platform-swift/"><strong>cross-platform Swift</strong></a>.</li>
+</ul>
 
-            
-            <p><em>Keep reading on <a href="https://davidederosa.com/cross-platform-swift/c-interop-part-one/">davidederosa.com</a></em></p>
+<p>The first point is pretty unique nowadays, and I’m proud that Passepartout makes the whole project survive and thrive without external support except for the satisfied customers around the world.</p>
+
+<p>Making Partout and Passepartout open-source is how I give back to the programming community, especially to the indie developers struggling to make a dent. I wish my stories could inspire and guide others to turn their side-project into self-sustaining products.</p>
+
+<h2 id="expectations-for-2026">Expectations for 2026</h2>
+
+<p>Year 2025 exceeded the expectations I had at the beginning of the year, by far. Some seemingly impossible things became a reality, whereas a few existing features went off the radar.</p>
+
+<p>For the record, these are the GitHub Projects of:</p>
+
+<ul>
+  <li><a href="https://github.com/orgs/partout-io/projects/23/views/2">2026 Q1</a></li>
+  <li><a href="https://github.com/orgs/partout-io/projects/20/views/2">2025 Q2-Q4</a> (Closed)</li>
+  <li><a href="https://github.com/orgs/partout-io/projects/9/views/2">2025 Q1</a> (Closed)</li>
+  <li><a href="https://github.com/orgs/partout-io/projects/1/views/8">2024</a> (Closed, largely private)</li>
+</ul>
+
+<h3 id="cross-platform">Cross-platform</h3>
+
+<p>One year ago, making Passepartout cross-platform was utopic because:</p>
+
+<ul>
+  <li>I had never really considered the idea.</li>
+  <li>Swift is clumsy outside of the Apple ecosystem.</li>
+</ul>
+
+<p>When I decided to take my chances around March, though, I (very) patiently figured out the (many) steps to take to make it real. Today, I am at around 80-85% to bring Passepartout to all the operating systems that Swift supports (Android, Windows, Linux).</p>
+
+<p>The Android MVP was part of the <a href="/2025/11/update-q4-2025/">previous update</a>, but it’s still in the works because I underestimated the needed effort, plus “life issues” showed up. Windows/Linux will follow later on. Cross-platform remains the top priority of 2026.</p>
+
+<h3 id="connectivity">Connectivity</h3>
+
+<p>Passepartout is starting to lag behind in terms of connectivity options. It’s not that I don’t care, it’s only a matter of working volume, as usual. The work for cross-platform is pretty intense, but connectivity comes next in my priorities:</p>
+
+<ul>
+  <li>Increase feature-parity with OpenVPN</li>
+  <li>Other VPN protocols</li>
+  <li>Better support for proxies</li>
+  <li>Possibly more obfuscation</li>
+</ul>
+
+<h3 id="providers">Providers</h3>
+
+<p>The other goal of Q4 was the umpteenth rework of the providers integration. Honestly, I’m thinking of discontinuing the feature because the cost/benefit of maintaining it is ridiculously disadvantageous.</p>
+
+<p>The primary target of Passepartout is people using personal or company servers. Add to that, VPN providers don’t easily offer access to their public APIs. All in all, providers are a huge PITA with marginal returns on investment, and they reguarly take my time away from things that matter more to the audience.</p>
+
+<p>For what it’s worth, and unfortunately, the <a href="https://mullvad.net/it/blog/removing-openvpn-15th-january-2026">Mullvad deadline for OpenVPN</a> will not be met. The Mullvad provider is expected to stop working in Passepartout in the upcoming weeks. Manually imported WireGuard profiles will work as usual.</p>
+
+<h3 id="follow-passepartout-on-reddit">Follow Passepartout on Reddit</h3>
+
+<p>Subscribe to the <a href="https://www.reddit.com/r/passepartout/">Passepartout subreddit</a> for the latest updates about the app.</p>
+
+
             
             <p><a href="/blog">Back to index</a></p>
         </section>
@@ -109,11 +166,6 @@ gtag('config', 'G-89X200F7CB');
         <section id="blog-posts" class="related">
             <h3>Related posts</h3>
             <ul>
-                
-                <li>
-                    <span class="post-preview"><a href="/2026/01/2026-one-year-later/">2026: One year later</a></span>
-                    <span class="post-date">Jan 04, 2026</span>
-                </li>
                 
                 <li>
                     <span class="post-preview"><a href="/2025/11/update-q4-2025/">Update: Q4 2025</a></span>
@@ -128,6 +180,11 @@ gtag('config', 'G-89X200F7CB');
                 <li>
                     <span class="post-preview"><a href="/2025/07/discontinuing-support-for-the-protonvpn-provider/">Discontinuining support for the ProtonVPN provider</a></span>
                     <span class="post-date">Jul 18, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/07/modern-cross-platform-encryption/">Modern cross-platform encryption</a></span>
+                    <span class="post-date">Jul 11, 2025</span>
                 </li>
                 
                 <li>

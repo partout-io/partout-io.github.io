@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2026-01-03T17:59:27+01:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">Update: Q4 2025</title><link href="https://partout.io/2025/11/update-q4-2025/" rel="alternate" type="text/html" title="Update: Q4 2025" /><published>2025-11-04T00:00:00+01:00</published><updated>2025-11-04T00:00:00+01:00</updated><id>https://partout.io/2025/11/update-q4-2025</id><content type="html" xml:base="https://partout.io/2025/11/update-q4-2025/"><![CDATA[<p>The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2026-01-04T20:37:37+01:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">2026: One year later</title><link href="https://partout.io/2026/01/2026-one-year-later/" rel="alternate" type="text/html" title="2026: One year later" /><published>2026-01-04T00:00:00+01:00</published><updated>2026-01-04T00:00:00+01:00</updated><id>https://partout.io/2026/01/2026-one-year-later</id><content type="html" xml:base="https://partout.io/2026/01/2026-one-year-later/"><![CDATA[<h2 id="2025-was-hard">2025 was HARD</h2>
+
+<p>Last year, I published two posts about <a href="/2025/03/rewriting-passepartout-for-v3/">the reasons for Passepartout v3</a> and the <a href="/2025/03/the-roadmap-for-2025/">challenging two months</a> it took to recover the app stability after its first release.</p>
+
+<p>There’s been 51 releases in 2025, about one per week, and not because I deem regular updates necessary per se. In fact, weekly app updates with fake changelogs typically suggest corporate BS.</p>
+
+<p>In my case, I refactored <em>so many</em> 1000s of lines of sensitive code that the small-to-transparent updates were my way to avoid catastrophes. It’s easy to spot regressions in short development cycles, and the new release strategy has proven to be very effective throughout the year.</p>
+
+<h2 id="100-open-source-software-oss">100% Open-Source Software (OSS)</h2>
+
+<p>At some point during the year, I decided to make <strong>Partout fully open-source</strong> again. The goal was for it to showcase multiple aspects of free software development, including:</p>
+
+<ul>
+  <li>An open-source project that is <strong>financially sustainable</strong>.</li>
+  <li><strong>Reproducible builds</strong> in Passepartout CI/CD.</li>
+  <li>Not only coding, also <a href="https://github.com/orgs/partout-io/projects?query=is%3Aopen"><strong>planning in public</strong></a>.</li>
+  <li>Being a reference project for <a href="https://davidederosa.com/cross-platform-swift/"><strong>cross-platform Swift</strong></a>.</li>
+</ul>
+
+<p>The first point is pretty unique nowadays, and I’m proud that Passepartout makes the whole project survive and thrive without external support except for the satisfied customers around the world.</p>
+
+<p>Making Partout and Passepartout open-source is how I give back to the programming community, especially to the indie developers struggling to make a dent. I wish my stories could inspire and guide others to turn their side-project into self-sustaining products.</p>
+
+<h2 id="expectations-for-2026">Expectations for 2026</h2>
+
+<p>Year 2025 exceeded the expectations I had at the beginning of the year, by far. Some seemingly impossible things became a reality, whereas a few existing features went off the radar.</p>
+
+<p>For the record, these are the GitHub Projects of:</p>
+
+<ul>
+  <li><a href="https://github.com/orgs/partout-io/projects/23/views/2">2026 Q1</a></li>
+  <li><a href="https://github.com/orgs/partout-io/projects/20/views/2">2025 Q2-Q4</a> (Closed)</li>
+  <li><a href="https://github.com/orgs/partout-io/projects/9/views/2">2025 Q1</a> (Closed)</li>
+  <li><a href="https://github.com/orgs/partout-io/projects/1/views/8">2024</a> (Closed, largely private)</li>
+</ul>
+
+<h3 id="cross-platform">Cross-platform</h3>
+
+<p>One year ago, making Passepartout cross-platform was utopic because:</p>
+
+<ul>
+  <li>I had never really considered the idea.</li>
+  <li>Swift is clumsy outside of the Apple ecosystem.</li>
+</ul>
+
+<p>When I decided to take my chances around March, though, I (very) patiently figured out the (many) steps to take to make it real. Today, I am at around 80-85% to bring Passepartout to all the operating systems that Swift supports (Android, Windows, Linux).</p>
+
+<p>The Android MVP was part of the <a href="/2025/11/update-q4-2025/">previous update</a>, but it’s still in the works because I underestimated the needed effort, plus “life issues” showed up. Windows/Linux will follow later on. Cross-platform remains the top priority of 2026.</p>
+
+<h3 id="connectivity">Connectivity</h3>
+
+<p>Passepartout is starting to lag behind in terms of connectivity options. It’s not that I don’t care, it’s only a matter of working volume, as usual. The work for cross-platform is pretty intense, but connectivity comes next in my priorities:</p>
+
+<ul>
+  <li>Increase feature-parity with OpenVPN</li>
+  <li>Other VPN protocols</li>
+  <li>Better support for proxies</li>
+  <li>Possibly more obfuscation</li>
+</ul>
+
+<h3 id="providers">Providers</h3>
+
+<p>The other goal of Q4 was the umpteenth rework of the providers integration. Honestly, I’m thinking of discontinuing the feature because the cost/benefit of maintaining it is ridiculously disadvantageous.</p>
+
+<p>The primary target of Passepartout is people using personal or company servers. Add to that, VPN providers don’t easily offer access to their public APIs. All in all, providers are a huge PITA with marginal returns on investment, and they reguarly take my time away from things that matter more to the audience.</p>
+
+<p>For what it’s worth, and unfortunately, the <a href="https://mullvad.net/it/blog/removing-openvpn-15th-january-2026">Mullvad deadline for OpenVPN</a> will not be met. The Mullvad provider is expected to stop working in Passepartout in the upcoming weeks. Manually imported WireGuard profiles will work as usual.</p>
+
+<h3 id="follow-passepartout-on-reddit">Follow Passepartout on Reddit</h3>
+
+<p>Subscribe to the <a href="https://www.reddit.com/r/passepartout/">Passepartout subreddit</a> for the latest updates about the app.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><category term="2026" /><summary type="html"><![CDATA[2025 was HARD]]></summary></entry><entry><title type="html">Update: Q4 2025</title><link href="https://partout.io/2025/11/update-q4-2025/" rel="alternate" type="text/html" title="Update: Q4 2025" /><published>2025-11-04T00:00:00+01:00</published><updated>2025-11-04T00:00:00+01:00</updated><id>https://partout.io/2025/11/update-q4-2025</id><content type="html" xml:base="https://partout.io/2025/11/update-q4-2025/"><![CDATA[<p>The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.</p>
 
 <h2 id="remote-configuration">Remote configuration</h2>
 
@@ -210,55 +280,4 @@
   </li>
 </ul>
 
-<p>Thanks to those who are trusting the process.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><summary type="html"><![CDATA[Recently, I made my current backlog public. I like to share what I’m working on, and in future posts, I’ll talk about how GitHub Projects helps me plan the development of Passepartout without losing my mind.]]></summary></entry><entry><title type="html">Rewriting Passepartout for v3</title><link href="https://partout.io/2025/03/rewriting-passepartout-for-v3/" rel="alternate" type="text/html" title="Rewriting Passepartout for v3" /><published>2025-03-11T00:00:00+01:00</published><updated>2025-03-11T00:00:00+01:00</updated><id>https://partout.io/2025/03/rewriting-passepartout-for-v3</id><content type="html" xml:base="https://partout.io/2025/03/rewriting-passepartout-for-v3/"><![CDATA[<p>For software to live a long life, it must grow together with our experience. If our skills improve at a faster pace than we maintain our software, its design will start to drift away from our standards and expectations. If we let the gap increase for too long, it will eventually be impossible to catch up, and we’ll end up hating our creations.</p>
-
-<h2 id="version-2-was-a-mess">Version 2 was a mess</h2>
-
-<p>Passepartout used to be two separate iOS and macOS apps, with all the complications that this implies. In 2022, I used Passepartout to learn <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a> –I considered Flutter initially– and make v2 a partially multiplatform app. Partially because the macOS app was a hybrid <a href="https://developer.apple.com/mac-catalyst/">Catalyst/iPad</a> app, a terrible choice if I think of it today. I don’t even know why I did it, but whatever.</p>
-
-<p>The conclusions I drew after v2:</p>
-
-<ul>
-  <li>SwiftUI is very hard to get right. I had to rewrite my views multiple times due to my wrong understanding of the framework.</li>
-  <li>Catalyst made the macOS app an ugly and unstable iPadOS app, let alone a complete nightmare to develop.</li>
-  <li>The time I spent on the Mac system menu, in particular, was beyond ridiculous. Maybe I’ll dedicate a post to this clunky Catalyst/AppKit interaction.</li>
-  <li>The app core was overengineered, untested, untestable, and confusing.</li>
-  <li><a href="https://github.com/partout-io/tunnelkit">TunnelKit</a> was already unmanageable and inextensible. Touching the wrong line could break connectivity for thousands of users.</li>
-</ul>
-
-<p>I’m aware that we, developers, occasionally suffer an innate tendency to be unsatisfied with our choices, whatever they are. Redoing the same things over and over is detrimental to making progress, though. Therefore, rewriting software should <em>never</em> be your first choice. That’s why I ruminated around the idea for months, but the rewrite was inevitable 7 years after the first release.</p>
-
-<p>Users don’t and can’t realize the amount of bugs that Passepartout v2 and TunnelKit had. The codebase, <em>my codebase</em>, was such a high barrier that it took me a year (2022 to 2023) to resolve some legitimate concerns with iCloud. Requests/bugs were sadly flowing at 30x the speed I was able to address them. The app was half abandoned.</p>
-
-<p>It’s, however, very risky to rewrite an app that was stable, making decent money, and required very little support despite a user base in the hundreds of thousands. To end up, one year later, with the same app with more or less the same features.</p>
-
-<p>Rewriting must be <em>really</em> worth it.</p>
-
-<h2 id="the-costbenefit-of-rewriting-software">The cost/benefit of rewriting software</h2>
-
-<p>Version 3 is the last time I <em>intend</em> to attack the foundations of Passepartout.</p>
-
-<p>So many times I rewrote code in my life with the sole intent of working in a “beautiful” codebase, not realizing how quickly the enthusiasm wanes when the development routine is back to normal. Give it a few months and, no matter what, your codebase will look “ugly” again. It never ends.</p>
-
-<p>I learned not to rely on “beauty” to bring me back to the joy of programming. After all, when I wrote those nasty lines 10 years ago, I probably thought it was the state of the art. Right?</p>
-
-<p>Today, I try to refactor software as a regular exercise, but at a smaller scale, and with a different purpose:</p>
-
-<p><strong>Make my changes last as long as possible.</strong></p>
-
-<p>Below is what I did in 2024 –part-time until August– for this major update:</p>
-
-<ul>
-  <li><a href="https://github.com/orgs/partout-io/projects/1/views/4?filterQuery=">The GitHub Project for v3</a></li>
-  <li><a href="https://github.com/orgs/partout-io/projects/1/views/8?filterQuery=">The tasks split by goal</a></li>
-</ul>
-
-<p>The project encompassed ~1000 items, of which ~350 are invisible for being in private repositories. An insane amount of work, in hindsight.</p>
-
-<p>Today, I can confirm that it was by no means a waste of time. After one year of development, the success of this reengineering is summarized in a sentence:</p>
-
-<p><strong>Most areas of Passepartout won’t need to be modified for years to come.</strong></p>
-
-<p>This is the single measure you want to focus on when considering a big architectural redesign: the time you save in the long run must dramatically compensate for the effort of rewriting. With this mantra, good design will be the natural consequence. Because good design, ultimately, is meant to save development time.</p>
-
-<p>The best code of your software is the one you forget about, the one you don’t need to touch ever again.</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="refactoring" /><category term="planning" /><summary type="html"><![CDATA[For software to live a long life, it must grow together with our experience. If our skills improve at a faster pace than we maintain our software, its design will start to drift away from our standards and expectations. If we let the gap increase for too long, it will eventually be impossible to catch up, and we’ll end up hating our creations.]]></summary></entry></feed>
+<p>Thanks to those who are trusting the process.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><summary type="html"><![CDATA[Recently, I made my current backlog public. I like to share what I’m working on, and in future posts, I’ll talk about how GitHub Projects helps me plan the development of Passepartout without losing my mind.]]></summary></entry></feed>
