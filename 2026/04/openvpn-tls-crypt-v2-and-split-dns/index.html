@@ -19,19 +19,19 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Partout" />
-    <meta property="og:title" content="Discontinuining support for the ProtonVPN provider" />
+    <meta property="og:title" content="OpenVPN --tls-crypt-v2 and 'Split DNS'" />
     <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta property="og:url" content="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" />
+    <meta property="og:url" content="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/" />
 
     <!-- Twitter -->
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@keeshux" />
-    <meta name="twitter:title" content="Discontinuining support for the ProtonVPN provider" />
+    <meta name="twitter:title" content="OpenVPN --tls-crypt-v2 and 'Split DNS'" />
     <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
-    <meta name="twitter:url" content="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" />
+    <meta name="twitter:url" content="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/" />
 
-    <link rel="canonical" href="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" />
+    <link rel="canonical" href="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/" />
     <link rel="author" href="https://davidederosa.com" />
 
     <link rel="stylesheet" href="/s/main.css?1776715672" />
@@ -78,15 +78,34 @@ gtag('config', 'G-89X200F7CB');
 
     <article class="post post-full" itemscope itemtype="https://schema.org/Article">
         <header>
-            <h2 itemprop="name">Discontinuining support for the ProtonVPN provider</h2>
-            <p class="post-date" itemprop="datepublished">Jul 18, 2025</p>
+            <h2 itemprop="name">OpenVPN --tls-crypt-v2 and 'Split DNS'</h2>
+            <p class="post-date" itemprop="datepublished">Apr 20, 2026</p>
         </header>
         <section class="post-body">
-            <p>Recently, I realized that the public ProtonVPN API <a href="https://www.reddit.com/r/ProtonVPN/comments/1kr3yu9/byebye_api_power_users_have_been_shut_out_by/">was made private</a>, which in turn left the infrastructure in Passepartout outdated for a while. In my opinion, these are reasonable moves by public providers that don’t want their customers to use third party apps, because it would require additional customer support. While I believe that offering API plans for integrating alternative clients or resellers would be a nice addition, it’s absolutely fine if they don’t want to.</p>
+            <h2 id="on-q1-and-android">On Q1 and Android</h2>
 
-<p>Therefore, the ProtonVPN provider will be removed next week from the supported Passepartout providers.</p>
+<p>These months have seen steady yet seemingly dummy releases, but I can’t even describe <a href="https://github.com/partout-io/passepartout/milestones?state=closed">the amount of work</a> behind them to rethink Passepartout as a cross-platform application on top of a C ABI. I don’t feel like providing another deadline that I won’t meet, so I’ll just say that 99% of my work volume is towards Partout and the MVP of Passepartout for Android.</p>
 
-<p>You can find more information <a href="https://github.com/partout-io/partout/pull/129">in the related PR</a>.</p>
+<h2 id="parity-with-openvpn">Parity with OpenVPN</h2>
+
+<p>Passepartout will <em>never</em> be a 1:1 replacement for the official OpenVPN client, and some work has to be done at some point to improve performance. What matters, though, is that Passepartout supports those features users require the most. One of them was <code class="language-plaintext highlighter-rouge">tls-crypt-v2</code>, and version 3.7.0 has finally introduced it.</p>
+
+<h2 id="split-dns">Split DNS</h2>
+
+<p>Passepartout 3.8.0 adds something quite unique in the Apple ecosystem, which is <em>true</em> <a href="https://github.com/partout-io/passepartout/issues/503">split DNS</a>. You will find the (paid) feature in the DNS module under the name “Only for configured domains”. By enabling this option, the search domains will act as a filter to determine whether a DNS query goes through the VPN or not. This makes sense in those scenarios where the VPN is not meant to replace the default gateway, but rather to provide access to a private network with its internally resolved hostnames.</p>
+
+<p>Thanks to <a href="https://github.com/awein">Andrew</a> for the original report and feature request.</p>
+
+<h2 id="exporting-configurations">Exporting configurations</h2>
+
+<p>Another (paid) feature added in 3.7.0 is the ability to export OpenVPN/WireGuard modules as configuration files, i.e., .ovpn and .conf files respectively. The latter is supported in the official (and free) WireGuard app, but you’ll rarely find apps that export OpenVPN profiles as .ovpn or via AirDrop, at least on iOS. I’m proud to say that Passepartout is one of them.</p>
+
+<h2 id="leaving-reddit">Leaving Reddit</h2>
+
+<p>This is where the project was born in 2018, but it seems to me that <a href="https://www.reddit.com/r/passepartout">Reddit</a> no longer is the right place to start constructive and well-mannered conversations. Therefore, all support, bug reports, and feature requests are now handled on <a href="https://github.com/orgs/partout-io/discussions">GitHub Discussions</a>. The subreddit remains open for general discussion, but I’m out, except for the typical project announcements.</p>
+
+<p><a href="https://github.com/partout-io/partout">GitHub</a> is now the single source of truth for the development of Partout/Passepartout.</p>
+
 
             
             <p><a href="/blog">Back to index</a></p>
@@ -101,11 +120,6 @@ gtag('config', 'G-89X200F7CB');
             <ul>
                 
                 <li>
-                    <span class="post-preview"><a href="/2026/04/openvpn-tls-crypt-v2-and-split-dns/">OpenVPN --tls-crypt-v2 and 'Split DNS'</a></span>
-                    <span class="post-date">Apr 20, 2026</span>
-                </li>
-                
-                <li>
                     <span class="post-preview"><a href="/2026/01/2026-one-year-later/">2026: One year later</a></span>
                     <span class="post-date">Jan 04, 2026</span>
                 </li>
@@ -118,6 +132,11 @@ gtag('config', 'G-89X200F7CB');
                 <li>
                     <span class="post-preview"><a href="/2025/09/update-q3-2025/">Update: Q3 2025</a></span>
                     <span class="post-date">Sep 08, 2025</span>
+                </li>
+                
+                <li>
+                    <span class="post-preview"><a href="/2025/07/discontinuing-support-for-the-protonvpn-provider/">Discontinuining support for the ProtonVPN provider</a></span>
+                    <span class="post-date">Jul 18, 2025</span>
                 </li>
                 
                 <li>

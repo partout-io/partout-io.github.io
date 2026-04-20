@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2026-03-22T21:04:55+01:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">2026: One year later</title><link href="https://partout.io/2026/01/2026-one-year-later/" rel="alternate" type="text/html" title="2026: One year later" /><published>2026-01-04T00:00:00+01:00</published><updated>2026-01-04T00:00:00+01:00</updated><id>https://partout.io/2026/01/2026-one-year-later</id><content type="html" xml:base="https://partout.io/2026/01/2026-one-year-later/"><![CDATA[<h2 id="2025-was-hard">2025 was HARD</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2026-04-20T22:07:52+02:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">OpenVPN –tls-crypt-v2 and ‘Split DNS’</title><link href="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/" rel="alternate" type="text/html" title="OpenVPN –tls-crypt-v2 and ‘Split DNS’" /><published>2026-04-20T00:00:00+02:00</published><updated>2026-04-20T00:00:00+02:00</updated><id>https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns</id><content type="html" xml:base="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/"><![CDATA[<h2 id="on-q1-and-android">On Q1 and Android</h2>
+
+<p>These months have seen steady yet seemingly dummy releases, but I can’t even describe <a href="https://github.com/partout-io/passepartout/milestones?state=closed">the amount of work</a> behind them to rethink Passepartout as a cross-platform application on top of a C ABI. I don’t feel like providing another deadline that I won’t meet, so I’ll just say that 99% of my work volume is towards Partout and the MVP of Passepartout for Android.</p>
+
+<h2 id="parity-with-openvpn">Parity with OpenVPN</h2>
+
+<p>Passepartout will <em>never</em> be a 1:1 replacement for the official OpenVPN client, and some work has to be done at some point to improve performance. What matters, though, is that Passepartout supports those features users require the most. One of them was <code class="language-plaintext highlighter-rouge">tls-crypt-v2</code>, and version 3.7.0 has finally introduced it.</p>
+
+<h2 id="split-dns">Split DNS</h2>
+
+<p>Passepartout 3.8.0 adds something quite unique in the Apple ecosystem, which is <em>true</em> <a href="https://github.com/partout-io/passepartout/issues/503">split DNS</a>. You will find the (paid) feature in the DNS module under the name “Only for configured domains”. By enabling this option, the search domains will act as a filter to determine whether a DNS query goes through the VPN or not. This makes sense in those scenarios where the VPN is not meant to replace the default gateway, but rather to provide access to a private network with its internally resolved hostnames.</p>
+
+<p>Thanks to <a href="https://github.com/awein">Andrew</a> for the original report and feature request.</p>
+
+<h2 id="exporting-configurations">Exporting configurations</h2>
+
+<p>Another (paid) feature added in 3.7.0 is the ability to export OpenVPN/WireGuard modules as configuration files, i.e., .ovpn and .conf files respectively. The latter is supported in the official (and free) WireGuard app, but you’ll rarely find apps that export OpenVPN profiles as .ovpn or via AirDrop, at least on iOS. I’m proud to say that Passepartout is one of them.</p>
+
+<h2 id="leaving-reddit">Leaving Reddit</h2>
+
+<p>This is where the project was born in 2018, but it seems to me that <a href="https://www.reddit.com/r/passepartout">Reddit</a> no longer is the right place to start constructive and well-mannered conversations. Therefore, all support, bug reports, and feature requests are now handled on <a href="https://github.com/orgs/partout-io/discussions">GitHub Discussions</a>. The subreddit remains open for general discussion, but I’m out, except for the typical project announcements.</p>
+
+<p><a href="https://github.com/partout-io/partout">GitHub</a> is now the single source of truth for the development of Partout/Passepartout.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2026" /><summary type="html"><![CDATA[On Q1 and Android]]></summary></entry><entry><title type="html">2026: One year later</title><link href="https://partout.io/2026/01/2026-one-year-later/" rel="alternate" type="text/html" title="2026: One year later" /><published>2026-01-04T00:00:00+01:00</published><updated>2026-01-04T00:00:00+01:00</updated><id>https://partout.io/2026/01/2026-one-year-later</id><content type="html" xml:base="https://partout.io/2026/01/2026-one-year-later/"><![CDATA[<h2 id="2025-was-hard">2025 was HARD</h2>
 
 <p>Last year, I published two posts about <a href="/2025/03/rewriting-passepartout-for-v3/">the reasons for Passepartout v3</a> and the <a href="/2025/03/the-roadmap-for-2025/">challenging two months</a> it took to recover the app stability after its first release.</p>
 
@@ -202,82 +224,4 @@
 
 <p><a href="">Passepartout</a> is a networking app mostly dealing with VPN connections. At least in the tunnel context, performance <em>does</em> matter. When it comes to OpenVPN in particular, it’s very hard to compete with a pure C codebase – the official library – when you also have to account for the overhead of the Swift runtime. Let’s not forget about the <a href="https://developer.apple.com/forums/thread/73148">strict memory limits</a> of Network Extension either. The time I spent on profiling to improve efficiency, resolve memory leaks, and reduce the crash rate, among other things, is pretty massive.</p>
 
-<p>Two months ago, a user reported a regression in the OpenVPN negotiation where the handshake would never complete. I could implement a fix quickly, yet the handshake took 4x longer than with the obsolete TunnelKit. A whopping and unacceptable 20-25s vs 5s negotiation!</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="swift" /><summary type="html"><![CDATA[While many people copy and paste unoriginal thoughts about AI and the so-called “vibe coding”, it seems that what used to make software valuable is constantly put aside. If you try to argue that tech does matter in a tech-oriented product, they will tell you that:]]></summary></entry><entry><title type="html">The roadmap for 2025</title><link href="https://partout.io/2025/03/the-roadmap-for-2025/" rel="alternate" type="text/html" title="The roadmap for 2025" /><published>2025-03-17T00:00:00+01:00</published><updated>2025-03-17T00:00:00+01:00</updated><id>https://partout.io/2025/03/the-roadmap-for-2025</id><content type="html" xml:base="https://partout.io/2025/03/the-roadmap-for-2025/"><![CDATA[<p>Recently, I made <a href="https://github.com/orgs/partout-io/projects/9">my current backlog</a> public. I like to share what I’m working on, and in future posts, I’ll talk about how GitHub Projects helps me plan the development of Passepartout without losing my mind.</p>
-
-<p>Here I present a sneak peek of what 2025 has been so far, and what I envision for the remainder of the year.</p>
-
-<h2 id="short-term">Short-term</h2>
-
-<h3 id="stability-again">Stability, again</h3>
-
-<p>Reaching stability after <a href="/2025/03/rewriting-passepartout-for-v3/">rewriting Passepartout v3</a> has been <em>extremely</em> challenging. Despite being a mid-to-small project, it’s insanely hard to keep track of all the tiny details and edge cases covered in such a long development history. Regressions (i.e. features that used to work but are broken by an update) are just inevitable.</p>
-
-<p>I wonder how many people have realized that <a href="https://github.com/partout-io/passepartout/releases">Passepartout has seen 14 updates</a> in less than two months. The criticism, the problems with in-app purchases, and the unforgiving reviews that most customers don’t care to update when a problem is fixed. The funniest part was those blaming me for being a “money grabber” at a time when the cost/benefit ratio of working on Passepartout was at a historical minimum. I worked up to 100h/week while seeing sales going down 60%.</p>
-
-<p>But I’m still alive!</p>
-
-<h3 id="providers-api">Providers API</h3>
-
-<p>The JSON API of Passepartout has been a drag for too long. The time has come to rework it because it’s also a privacy concern for providers, API calls should be authenticated. The outcome will be a better overall integration and support for WireGuard in providers. Mullvad is likely to be the first one because of the <a href="https://www.reddit.com/r/mullvadvpn/comments/1gmf2id/removing_openvpn_15th_january_2026_blog_mullvad/">more stringent deadline</a>.</p>
-
-<h3 id="standalone-mac-release">Standalone Mac release</h3>
-
-<p>This is the one I’m mostly excited about: releasing Passepartout as a .dmg for macOS, outside of the App Store. The app will be limited to free features until I implement a way to receive payments without the App Store.</p>
-
-<h2 id="mid-term">Mid-term</h2>
-
-<h3 id="more-providers">More providers</h3>
-
-<p>A direct consequence of a better-designed API is making room for more providers.</p>
-
-<h3 id="more-protocols">More protocols</h3>
-
-<p>I’d rather disclose this later, but I’d like to extend the suite of supported VPN protocols. Maybe more than just VPN.</p>
-
-<h2 id="long-term">Long-term</h2>
-
-<h3 id="new-platforms">New platforms</h3>
-
-<p>A long-term goal that will not make it to 2025, but that’s been on the back of my head, is opening up to non-Apple platforms. There’s nothing concrete yet, but I’ve been designing the new codebase with this in mind.</p>
-
-<h2 id="the-app-is-already-better-than-v2">The app is already better than v2</h2>
-
-<p>Lastly, I want to spend some words on the new app.</p>
-
-<p>We usually take things that work for granted and complain about things that don’t. It’s human nature. Over the years, I learned that a silent customer is a happy customer and that a noisy one may be right, but not that often.</p>
-
-<p>Even when the update was receiving the biggest hate, I knew that the app would be better, but I could not blame the users “for not seeing it”. An app like Passepartout is best when you don’t notice that it’s running.</p>
-
-<p>I know that the app is better from an engineering perspective. Let me tell you, instead, why v3 is better <em>as an user</em>:</p>
-
-<ul>
-  <li>Better battery consumption</li>
-  <li>Super-low crash rate</li>
-  <li>Native Mac app</li>
-  <li>Mac menu consistent with the app</li>
-  <li>Per-profile iCloud sync</li>
-  <li>TV app is beautiful and sync is reliable</li>
-  <li>Shortcuts run in the background</li>
-  <li>Stable UI with consistent L&amp;F and animations</li>
-  <li>Much better provider server selection</li>
-  <li>Custom light/dark appearance</li>
-  <li>Interactive login</li>
-  <li>Route custom DNS inside/outside VPN</li>
-  <li>Edit WireGuard configurations</li>
-  <li>Convenient OTP field for OpenVPN (WIP)</li>
-  <li>Plenty of resolved OpenVPN bugs
-    <ul>
-      <li>Connection stuck randomly</li>
-      <li>Occasionally stuck when Wi-Fi/Mobile roaming</li>
-      <li>Regularly stuck when back from sleep</li>
-      <li>Disconnection on “Message too long”</li>
-      <li>Disconnection on “No buffer space available”</li>
-      <li>Disconnection during renegotiations</li>
-      <li>Slow to reconnect</li>
-      <li>Memory leaks</li>
-      <li>…</li>
-    </ul>
-  </li>
-</ul>
-
-<p>Thanks to those who are trusting the process.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><summary type="html"><![CDATA[Recently, I made my current backlog public. I like to share what I’m working on, and in future posts, I’ll talk about how GitHub Projects helps me plan the development of Passepartout without losing my mind.]]></summary></entry></feed>
+<p>Two months ago, a user reported a regression in the OpenVPN negotiation where the handshake would never complete. I could implement a fix quickly, yet the handshake took 4x longer than with the obsolete TunnelKit. A whopping and unacceptable 20-25s vs 5s negotiation!</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="swift" /><summary type="html"><![CDATA[While many people copy and paste unoriginal thoughts about AI and the so-called “vibe coding”, it seems that what used to make software valuable is constantly put aside. If you try to argue that tech does matter in a tech-oriented product, they will tell you that:]]></summary></entry></feed>
