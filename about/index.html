@@ -1,0 +1,168 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Blog">
+    
+
+
+
+
+
+
+
+
+
+<head>
+    <title>Partout is the easiest way to build cross-platform tunnel apps.</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Davide De Rosa" />
+    <meta name="description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="Partout">
+
+    <!-- OpenGraph -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Partout" />
+    <meta property="og:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
+    <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
+    <meta property="og:image" content="https://partout.io/s/partout.png?1786352332" />
+    <meta property="og:url" content="https://partout.io/about/" />
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@keeshux" />
+    <meta name="twitter:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
+    <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
+    <meta name="twitter:image" content="https://partout.io/s/partout.png?1786352332" />
+    <meta name="twitter:url" content="https://partout.io/about/" />
+
+    <link rel="canonical" href="https://partout.io/about/" />
+    <link rel="author" href="https://davidederosa.com" />
+
+    <link rel="stylesheet" href="/s/main.css?1786352332" />
+    
+    <link rel="stylesheet" href="/s/main-mobile.css?1786352332" media="only screen and (max-width: 600px)" />
+    
+
+    <link rel="icon" type="image/png" sizes="512x512" href="/s/favicon.png?1786352332" />
+    <link rel="apple-touch-icon" href="/s/apple-touch-icon.png?1786352332" />
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89X200F7CB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-89X200F7CB');
+</script>
+
+
+</head>
+
+    <body>
+        <div id="container">
+            <header class="site-header">
+    
+    <a class="site-mark" href="/" aria-label="Partout home">
+        <img class="site-logo partout-logo" src="/s/favicon.png" alt="" />
+    </a>
+    <div class="site-copy">
+        <h1><a href="/">Partout</a></h1>
+        <p class="tagline">The easiest way to build cross-platform tunnel apps.</p>
+    </div>
+    
+</header>
+
+            <main>
+    <h2 id="about">About</h2>
+
+<ul>
+  <li><a href="#the-team">The Team</a></li>
+  <li><a href="#what-is-partout-about">What is Partout about?</a></li>
+  <li><a href="#how-passepartout-was-born">How Passepartout was born</a></li>
+  <li><a href="#from-tunnelkit-to-partout">From TunnelKit to Partout</a></li>
+</ul>
+
+<h3 id="the-team">The Team</h3>
+
+<p>I’m <a href="https://davidederosa.com">Davide</a>, the “team” behind every aspect of Partout.</p>
+
+<h3 id="what-is-partout-about">What is Partout about?</h3>
+
+<p><em>Partout</em> is a framework to build cross-platform tunnel apps, but aims at being a project whose library is just the foundational software component.</p>
+
+<p>In a sense, Partout is a late spin-off of <a href="/passepartout/">Passepartout</a>, the comprehensive networking/privacy tool <a href="https://apps.apple.com/us/app/passepartout-vpn-client/id1433648537?mt=8">for iPhone, iPad, Mac, and Apple TV</a>.</p>
+
+<p><em>Partout</em> is a game changer in that:</p>
+
+<ul>
+  <li>It opened the doors to non-Apple platforms</li>
+  <li>It is much easier to deploy and use</li>
+  <li>It is dramatically more stable and efficient</li>
+  <li>It handles multiple protocols in a single service</li>
+  <li>It is agnostic of crypto libraries (e.g. OpenSSL)</li>
+  <li>It is not bound to VPN</li>
+</ul>
+
+<p><em>Partout</em> is available under the GPLv3.</p>
+
+<p>Feel free to <a href="mailto:info@partout.io">contact me</a> for <a href="/license">licensing</a> or further information.</p>
+
+<h3 id="how-passepartout-was-born">How Passepartout was born</h3>
+
+<p>It all started in 2017, when a former colleague at <a href="https://www.privateinternetaccess.com/">Private Internet Access</a> sent me some Ruby snippets that would connect to an OpenVPN server. He would then ask me: “Could you port this to the iPhone?”.</p>
+
+<p>Well, not only did I, but the guy left the company a few weeks later. I took care of the project alone for the next 7 years: that was <em>TunnelKit</em>. TunnelKit was the only stable OpenVPN implementation in native Swift/ObjC out there and, believe it or not, it is still relied on by <em>millions</em> of users, be it via my apps or providers like <a href="https://hide.me/">Hide.me</a>, <a href="https://www.privateinternetaccess.com/">PIA</a>, or <a href="https://protonvpn.com/">ProtonVPN</a>.</p>
+
+<p>After leaving PIA, I then wondered why there were so many VPN providers doing the same over and over with different skins: an app with a VPN on/off toggle.</p>
+
+<p>I came up with the idea of a <em>single key</em> that would open <em>multiple doors</em>, be it different protocols, providers, or platforms. That’s <a href="https://dictionary.cambridge.org/dictionary/french-english/passe-partout">what the word <em>Passepartout</em> stands for in French</a>, a <em>master key</em>, something that “passes everywhere”. It also refers to a term used in painting for a type of matting, which I learned about because my father was a painter.</p>
+
+<p>Frustrated by the abandonment of OpenVPN Connect, I first published Passepartout in 2018 as an OpenVPN client for iOS based on TunnelKit.</p>
+
+<h3 id="from-tunnelkit-to-partout">From TunnelKit to Partout</h3>
+
+<p>Unfortunately, TunnelKit was not designed for the original concept of Passepartout, so <a href="https://www.reddit.com/r/passepartout/comments/1bw4esv/the_looks_of_tunnelkit_20172024/">the app ended up lagging behind its limitations</a>. Beyond that, the library architecture was in general very primitive, tightly coupled to OpenVPN and OpenSSL, and hard to test.</p>
+
+<p>That’s why I dedicated a relevant part of 2023/2024 to this completely new library, <a href="https://github.com/partout-io/partout">Partout</a>, which today is the core of my project. The huge rewrite was worth the pain, a well-thought architecture that leverages the experience I gained with TunnelKit and WireGuardKit for OpenVPN and WireGuard connectivity.</p>
+
+<p>Recently, I even ported the Swift codebase to <a href="https://ziglang.org">Zig</a> for increased performance, tiny footprint, and wide cross-platform support.</p>
+
+<p>Through the years, Passepartout has become multiplatform, and WireGuard support was also added. As of August 2026, after establishing itself as a solid product for the Apple devices, Passepartout is almost ready to approach Android and Windows.</p>
+
+
+</main>
+
+            <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://github.com/partout-io">GitHub</a>
+        <a href="/passepartout/">Passepartout</a>
+    </nav>
+    <p class="notice">
+        Copyright (c) 2026 <a href="https://davidederosa.com" title="The author website">Davide De Rosa</a>.
+    </p>
+    
+    <p class="fine-print">
+        OpenVPN is a registered trademark of OpenVPN, Inc.<br />
+        "WireGuard" and the "WireGuard" logo are registered trademarks of Jason A. Donenfeld.
+    </p>
+    
+</footer>
+
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-coy-without-shadows.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-swift.min.js"></script>
+
+    </body>
+</html>

@@ -4,6 +4,15 @@
 <!DOCTYPE html>
 <html lang="en">
     
+
+
+
+
+
+
+
+
+
 <head>
     <title>Partout is the easiest way to build cross-platform tunnel apps.</title>
 
@@ -21,6 +30,7 @@
     <meta property="og:site_name" content="Partout" />
     <meta property="og:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
     <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
+    <meta property="og:image" content="https://partout.io/s/partout.png?1786352332" />
     <meta property="og:url" content="https://partout.io/" />
 
     <!-- Twitter -->
@@ -29,18 +39,19 @@
     <meta name="twitter:site" content="@keeshux" />
     <meta name="twitter:title" content="Partout is the easiest way to build cross-platform tunnel apps." />
     <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
+    <meta name="twitter:image" content="https://partout.io/s/partout.png?1786352332" />
     <meta name="twitter:url" content="https://partout.io/" />
 
     <link rel="canonical" href="https://partout.io/" />
     <link rel="author" href="https://davidederosa.com" />
 
-    <link rel="stylesheet" href="/s/main.css?1786288428" />
-    <link rel="stylesheet" href="/s/main-mobile.css?1786288428" media="only screen and (max-width: 600px)" />
+    <link rel="stylesheet" href="/s/main.css?1786352332" />
+    
+    <link rel="stylesheet" href="/s/main-mobile.css?1786352332" media="only screen and (max-width: 600px)" />
+    
 
-    <meta property="og:image" content="https://partout.io/s/partout.png?1786288428" />
-    <meta name="twitter:image" content="https://partout.io/s/partout.png?1786288428" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/s/favicon.png?1786288428" />
-    <link rel="apple-touch-icon" href="/s/apple-touch-icon.png?1786288428" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/s/favicon.png?1786352332" />
+    <link rel="apple-touch-icon" href="/s/apple-touch-icon.png?1786352332" />
 
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-89X200F7CB"></script>
@@ -56,7 +67,7 @@ gtag('config', 'G-89X200F7CB');
 
 </head>
 
-    <body id="top">
+    <body id="top" class="home-page">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
     <symbol id="icon-github" viewBox="0 0 97.6 96">
         <path class="st0" d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
@@ -73,72 +84,77 @@ gtag('config', 'G-89X200F7CB');
     </symbol>
 </svg>
 
-        <main id="home" class="column">
+        <div id="container" class="home-container">
+            <main id="home" class="column">
     <header>
-        <h1><a href="/" class="brand accent">Partout</a> is the <em>easiest</em> way to build cross-platform tunnel apps.</h1>
+        <h1>Build cross-platform tunnel apps with <a href="/" class="brand accent">Partout</a>.</h1>
         <p>Imagine that you could set up a VPN in a few lines so that you can focus on your product.</p>
         <p>Use Partout <a href="/license">in your apps now</a>.</p>
-        <pre><code class="language-swift">
-// WireGuard server at home
+        <pre><code class="language-swift">// WireGuard server at home
 let homeVPN = try registry.module(fromPath: "home.conf")
 
 let builder = Profile.Builder(name: "Home Server", modules: [homeVPN])
 let profile = try builder.build()
 
-try await tunnel.install(profile, connect: true)
-        </code></pre>
+try await tunnel.install(profile, connect: true)</code></pre>
         <p class="buttons">
             <a href="https://github.com/partout-io/partout" class="cta">
                 <svg class="icon"><use href="#icon-github"></use></svg>GitHub
             </a>
-            <a href="/blog" class="cta">
+            <a href="/blog/" class="cta">
                 <svg class="icon"><use href="#icon-rss"></use></svg>Blog
             </a>
         </p>
     </header>
     <section>
-        <h2>Fueling the <br class="mobile" /><a href="https://passepartoutvpn.app">Passepartout</a> client.</h2>
+        <h2>Fueling the <br class="mobile" /><a href="/passepartout/">Passepartout</a> client.</h2>
         <p>Passepartout is the go-to app for VPN and privacy, and showcases the use of Partout for hundreds of thousands of happy customers every day.</p>
         <div class="desktop">
-            <a href="https://passepartoutvpn.app"><img width="820" height="564" src="s/passepartout.png" class="screenshot" /></a>
+            <a href="/passepartout/"><img width="820" height="564" src="/s/passepartout.png" alt="Passepartout on Apple platforms" /></a>
         </div>
     </section>
     <section>
         <h2>Naturally for iOS, macOS,<br class="mobile" /> and tvOS.</h2>
         <p>With the convenience of the Swift Package Manager, the integration of Partout in Swift projects literally takes seconds.</p>
-        <pre><code class="language-swift">
-dependencies: [
+        <pre><code class="language-swift">dependencies: [
     .package(url: "https://github.com/partout-io/partout", branch: "master")
 ],
 targets: [
     .target(name: "MyApp", dependencies: ["partout"])
-]
-        </code></pre>
+]</code></pre>
     </section>
     <section>
         <h2>Soon for Android, Windows,<br class="mobile" /> and Linux.</h2>
-        <p>A Swift-backed C ABI and JNI bindings for Android are in the works. Partout embraces the challenge of porting a Swift library successfully outside the Apple ecosystem.</p>
+        <p>A comprehensive C ABI and JNI bindings for Android are in the works. Partout is through the process of porting the original cross-platform Swift codebase to the modern <a href="https://ziglang.org/">Zig language</a>. Watch the <a href="/blog/">blog</a> for the latest updates.</p>
     </section>
     <section>
         <h2>Support the project.</h2>
-        <p>If you like Partout, please consider <a href="https://github.com/sponsors/partout-io">sponsoring</a> or<br /> <a href="https://buymeacoffee.com/partout.io">making a donation</a>.</p>
+        <p>Read more <a href="/about/">about Partout</a>. If you like the project, please consider <a href="https://github.com/sponsors/partout-io">sponsoring</a> or <a href="https://buymeacoffee.com/partout.io">making a donation</a>.</p>
     </section>
 </main>
 
-        <footer>
-    <p class="links">
-        <a href="https://github.com/partout-io/partout"><svg class="icon"><use href="#icon-github"></use></svg></a>
+            <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://github.com/partout-io">GitHub</a>
+        <a href="/passepartout/">Passepartout</a>
+    </nav>
+    <p class="notice">
+        Copyright (c) 2026 <a href="https://davidederosa.com" title="The author website">Davide De Rosa</a>.
     </p>
-    <p id="copyright">Copyright (c) 2026 <a href="https://davidederosa.com">Davide De Rosa</a></p>
-    <div class="trademarks">
+    
+    <p class="fine-print">
         OpenVPN is a registered trademark of OpenVPN, Inc.<br />
-        "WireGuard" and the "WireGuard" logo are registered trademarks of Jason A. Donenfeld<br />
-    </div>
+        "WireGuard" and the "WireGuard" logo are registered trademarks of Jason A. Donenfeld.
+    </p>
+    
 </footer>
 
-    </body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-coy-without-shadows.min.css" />
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-coy-without-shadows.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-swift.min.js"></script>
 
+    </body>
 </html>

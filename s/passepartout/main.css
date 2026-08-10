@@ -1,0 +1,18 @@
+.section-passepartout .site-header {
+    border-bottom-color: #eadfc8;
+}
+
+.section-passepartout aside {
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: inherit;
+}
+
+.passepartout-logo {
+    width: 78px;
+    height: 78px;
+    border-radius: 18px;
+}

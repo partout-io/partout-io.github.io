@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://partout.io/" rel="alternate" type="text/html" /><updated>2026-08-09T17:13:48+02:00</updated><id>https://partout.io/feed.xml</id><title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title><subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle><author><name>Davide De Rosa</name></author><entry><title type="html">OpenVPN –tls-crypt-v2 and ‘Split DNS’</title><link href="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/" rel="alternate" type="text/html" title="OpenVPN –tls-crypt-v2 and ‘Split DNS’" /><published>2026-04-20T00:00:00+02:00</published><updated>2026-04-20T00:00:00+02:00</updated><id>https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns</id><content type="html" xml:base="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/"><![CDATA[<h2 id="on-q1-and-android">On Q1 and Android</h2>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+    <link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" />
+    <link href="https://partout.io/" rel="alternate" type="text/html" />
+    <updated>2026-08-10T10:58:52+02:00</updated>
+    <id>https://partout.io/feed.xml</id>
+    <title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title>
+    <subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle>
+    <author>
+        <name>Davide De Rosa</name>
+        
+    </author>
+
+    
+    
+    
+    
+    <entry>
+        
+        <title type="html">OpenVPN –tls-crypt-v2 and ‘Split DNS’</title>
+        <link href="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/" rel="alternate" type="text/html" title="OpenVPN –tls-crypt-v2 and ‘Split DNS’" />
+        <published>2026-04-20T00:00:00+02:00</published>
+        <updated>2026-04-20T00:00:00+02:00</updated>
+        <id>https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns</id>
+        <content type="html" xml:base="https://partout.io/2026/04/openvpn-tls-crypt-v2-and-split-dns/"><![CDATA[<h2 id="on-q1-and-android">On Q1 and Android</h2>
 
 <p>These months have seen steady yet seemingly dummy releases, but I can’t even describe <a href="https://github.com/partout-io/passepartout/milestones?state=closed">the amount of work</a> behind them to rethink Passepartout as a cross-platform application on top of a C ABI. I don’t feel like providing another deadline that I won’t meet, so I’ll just say that 99% of my work volume is towards Partout and the MVP of Passepartout for Android.</p>
 
@@ -20,9 +45,27 @@
 
 <p>This is where the project was born in 2018, but it seems to me that <a href="https://www.reddit.com/r/passepartout">Reddit</a> no longer is the right place to start constructive and well-mannered conversations. Therefore, all support, bug reports, and feature requests are now handled on <a href="https://github.com/orgs/partout-io/discussions">GitHub Discussions</a>. The subreddit remains open for general discussion, but I’m out, except for the typical project announcements.</p>
 
-<p><a href="https://github.com/partout-io/partout">GitHub</a> is now the single source of truth for the development of Partout/Passepartout.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2026" /><summary type="html"><![CDATA[On Q1 and Android]]></summary></entry><entry><title type="html">2026: One year later</title><link href="https://partout.io/2026/01/2026-one-year-later/" rel="alternate" type="text/html" title="2026: One year later" /><published>2026-01-04T00:00:00+01:00</published><updated>2026-01-04T00:00:00+01:00</updated><id>https://partout.io/2026/01/2026-one-year-later</id><content type="html" xml:base="https://partout.io/2026/01/2026-one-year-later/"><![CDATA[<h2 id="2025-was-hard">2025 was HARD</h2>
+<p><a href="https://github.com/partout-io/partout">GitHub</a> is now the single source of truth for the development of Partout/Passepartout.</p>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[On Q1 and Android]]></summary>
+        
+    </entry>
+    
+    <entry>
+        
+        <title type="html">2026: One year later</title>
+        <link href="https://partout.io/2026/01/2026-one-year-later/" rel="alternate" type="text/html" title="2026: One year later" />
+        <published>2026-01-04T00:00:00+01:00</published>
+        <updated>2026-01-04T00:00:00+01:00</updated>
+        <id>https://partout.io/2026/01/2026-one-year-later</id>
+        <content type="html" xml:base="https://partout.io/2026/01/2026-one-year-later/"><![CDATA[<h2 id="2025-was-hard">2025 was HARD</h2>
 
-<p>Last year, I published two posts about <a href="/2025/03/rewriting-passepartout-for-v3/">the reasons for Passepartout v3</a> and the <a href="/2025/03/the-roadmap-for-2025/">challenging two months</a> it took to recover the app stability after its first release.</p>
+<p>Last year, I published two posts about the <a href="https://davidederosa.com/2025/03/rewriting-passepartout-for-v3/">reasons for Passepartout v3</a> and the <a href="/2025/03/the-roadmap-for-2025/">challenging two months</a> it took to recover the app stability after its first release.</p>
 
 <p>There’s been 51 releases in 2025, about one per week, and not because I deem regular updates necessary per se. In fact, weekly app updates with fake changelogs typically suggest corporate BS.</p>
 
@@ -90,7 +133,25 @@
 
 <h3 id="follow-passepartout-on-reddit">Follow Passepartout on Reddit</h3>
 
-<p>Subscribe to the <a href="https://www.reddit.com/r/passepartout/">Passepartout subreddit</a> for the latest updates about the app.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><category term="2026" /><summary type="html"><![CDATA[2025 was HARD]]></summary></entry><entry><title type="html">Update: Q4 2025</title><link href="https://partout.io/2025/11/update-q4-2025/" rel="alternate" type="text/html" title="Update: Q4 2025" /><published>2025-11-04T00:00:00+01:00</published><updated>2025-11-04T00:00:00+01:00</updated><id>https://partout.io/2025/11/update-q4-2025</id><content type="html" xml:base="https://partout.io/2025/11/update-q4-2025/"><![CDATA[<p>The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.</p>
+<p>Subscribe to the <a href="https://www.reddit.com/r/passepartout">Passepartout subreddit</a> for the latest updates about the app.</p>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[2025 was HARD]]></summary>
+        
+    </entry>
+    
+    <entry>
+        
+        <title type="html">Update: Q4 2025</title>
+        <link href="https://partout.io/2025/11/update-q4-2025/" rel="alternate" type="text/html" title="Update: Q4 2025" />
+        <published>2025-11-04T00:00:00+01:00</published>
+        <updated>2025-11-04T00:00:00+01:00</updated>
+        <id>https://partout.io/2025/11/update-q4-2025</id>
+        <content type="html" xml:base="https://partout.io/2025/11/update-q4-2025/"><![CDATA[<p>The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.</p>
 
 <h2 id="remote-configuration">Remote configuration</h2>
 
@@ -135,11 +196,29 @@
 
 <p>So, this had to be taken more carefully to prevent progressive rot of the codebase. The providers in general will be re-thought and simplified, once again, and only after that will the WireGuard integration be reconsidered. For what it’s worth, I’ll try my best to meet <a href="https://mullvad.net/it/blog/removing-openvpn-15th-january-2026">the Mullvad deadline</a>.</p>
 
-<p>If you have suggestions about how you would integrate providers in Passepartout, please <a href="https://www.reddit.com/r/passepartout/">post them on Reddit</a>.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><summary type="html"><![CDATA[The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.]]></summary></entry><entry><title type="html">Update: Q3 2025</title><link href="https://partout.io/2025/09/update-q3-2025/" rel="alternate" type="text/html" title="Update: Q3 2025" /><published>2025-09-08T00:00:00+02:00</published><updated>2025-09-08T00:00:00+02:00</updated><id>https://partout.io/2025/09/update-q3-2025</id><content type="html" xml:base="https://partout.io/2025/09/update-q3-2025/"><![CDATA[<p>This post starts a trend of quarterly updates about Passepartout. Being close to the end of Q3, this is mostly an overview of what I’ve done in the recent months, with an outlook on what I’m doing next.</p>
+<p>If you have suggestions about how you would integrate providers in Passepartout, please <a href="https://www.reddit.com/r/passepartout">post them on Reddit</a>.</p>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[The year is ending, and in this last quarter I had to reorganize a few priorities of the project. Let me tell you more about them.]]></summary>
+        
+    </entry>
+    
+    <entry>
+        
+        <title type="html">Update: Q3 2025</title>
+        <link href="https://partout.io/2025/09/update-q3-2025/" rel="alternate" type="text/html" title="Update: Q3 2025" />
+        <published>2025-09-08T00:00:00+02:00</published>
+        <updated>2025-09-08T00:00:00+02:00</updated>
+        <id>https://partout.io/2025/09/update-q3-2025</id>
+        <content type="html" xml:base="https://partout.io/2025/09/update-q3-2025/"><![CDATA[<p>This post starts a trend of quarterly updates about Passepartout. Being close to the end of Q3, this is mostly an overview of what I’ve done in the recent months, with an outlook on what I’m doing next.</p>
 
 <h2 id="rebranding-to-partout">Rebranding to <em>Partout</em></h2>
 
-<p>Passepartout will not change its name, but it will be part of a broader project named after its backbone: <em>Partout</em>. Partout is the [Swift library][https://github.com/partout-io/partout], now also cross-platform, of which Passepartout aims to be an elegant showcase. Easier to pronounce, shorter to type, the library I’m building is the very heart of Passepartout, and aims to provide a comprehensive, portable framework to create tunneling software. This website will soon reflect this new direction, I hope you’ll like it.</p>
+<p>Passepartout will not change its name, but it will be part of a broader project named after its backbone: <em>Partout</em>. Partout is the <a href="https://github.com/partout-io/partout">Swift library</a>, now also cross-platform, of which Passepartout aims to be an elegant showcase. Easier to pronounce, shorter to type, the library I’m building is the very heart of Passepartout, and aims to provide a comprehensive, portable framework to create tunneling software. This website will soon reflect this new direction, I hope you’ll like it.</p>
 
 <h2 id="cross-platform-is-real">Cross-platform is REAL!</h2>
 
@@ -165,63 +244,133 @@
 <ul>
   <li><strong>WireGuard in providers</strong>: Starting with Mullvad. This is mostly done, but I’m trying not to rush it. Let’s give it a couple of weeks still.</li>
   <li><strong>Interoperability</strong>: Importing and exporting profiles and modules, plus a universal format for Passepartout/Partout profiles. Sharing profiles with other people. These elements will give the project a stronger and unique identity.</li>
-</ul>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="cross-platform" /><category term="2025" /><summary type="html"><![CDATA[This post starts a trend of quarterly updates about Passepartout. Being close to the end of Q3, this is mostly an overview of what I’ve done in the recent months, with an outlook on what I’m doing next.]]></summary></entry><entry><title type="html">Discontinuining support for the ProtonVPN provider</title><link href="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" rel="alternate" type="text/html" title="Discontinuining support for the ProtonVPN provider" /><published>2025-07-18T00:00:00+02:00</published><updated>2025-07-18T00:00:00+02:00</updated><id>https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider</id><content type="html" xml:base="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/"><![CDATA[<p>Recently, I realized that the public ProtonVPN API <a href="https://www.reddit.com/r/ProtonVPN/comments/1kr3yu9/byebye_api_power_users_have_been_shut_out_by/">was made private</a>, which in turn left the infrastructure in Passepartout outdated for a while. In my opinion, these are reasonable moves by public providers that don’t want their customers to use third party apps, because it would require additional customer support. While I believe that offering API plans for integrating alternative clients or resellers would be a nice addition, it’s absolutely fine if they don’t want to.</p>
+</ul>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[This post starts a trend of quarterly updates about Passepartout. Being close to the end of Q3, this is mostly an overview of what I’ve done in the recent months, with an outlook on what I’m doing next.]]></summary>
+        
+    </entry>
+    
+    <entry>
+        
+        <title type="html">Discontinuining support for the ProtonVPN provider</title>
+        <link href="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" rel="alternate" type="text/html" title="Discontinuining support for the ProtonVPN provider" />
+        <published>2025-07-18T00:00:00+02:00</published>
+        <updated>2025-07-18T00:00:00+02:00</updated>
+        <id>https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider</id>
+        <content type="html" xml:base="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/"><![CDATA[<p>Recently, I realized that the public ProtonVPN API <a href="https://www.reddit.com/r/ProtonVPN/comments/1kr3yu9/byebye_api_power_users_have_been_shut_out_by/">was made private</a>, which in turn left the infrastructure in Passepartout outdated for a while. In my opinion, these are reasonable moves by public providers that don’t want their customers to use third party apps, because it would require additional customer support. While I believe that offering API plans for integrating alternative clients or resellers would be a nice addition, it’s absolutely fine if they don’t want to.</p>
 
 <p>Therefore, the ProtonVPN provider will be removed next week from the supported Passepartout providers.</p>
 
-<p>You can find more information <a href="https://github.com/partout-io/partout/pull/129">in the related PR</a>.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="protonvpn" /><category term="providers" /><summary type="html"><![CDATA[Recently, I realized that the public ProtonVPN API was made private, which in turn left the infrastructure in Passepartout outdated for a while. In my opinion, these are reasonable moves by public providers that don’t want their customers to use third party apps, because it would require additional customer support. While I believe that offering API plans for integrating alternative clients or resellers would be a nice addition, it’s absolutely fine if they don’t want to.]]></summary></entry><entry><title type="html">Modern cross-platform encryption</title><link href="https://partout.io/2025/07/modern-cross-platform-encryption/" rel="alternate" type="text/html" title="Modern cross-platform encryption" /><published>2025-07-11T00:00:00+02:00</published><updated>2025-07-11T00:00:00+02:00</updated><id>https://partout.io/2025/07/modern-cross-platform-encryption</id><content type="html" xml:base="https://partout.io/2025/07/modern-cross-platform-encryption/"><![CDATA[<p>As mentioned <a href="/2025/04/porting-passepartout-to-windows/">in an earlier post</a>, I’ve invested a good part of the recent months in porting Passepartout on non-Apple platforms. Version 3.5.4 quietly brings to life the first milestone of this initiative, which is opting into <em>modern cryptography</em>.</p>
+<p>You can find more information <a href="https://github.com/partout-io/partout/pull/129">in the related PR</a>.</p>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[Recently, I realized that the public ProtonVPN API was made private, which in turn left the infrastructure in Passepartout outdated for a while. In my opinion, these are reasonable moves by public providers that don’t want their customers to use third party apps, because it would require additional customer support. While I believe that offering API plans for integrating alternative clients or resellers would be a nice addition, it’s absolutely fine if they don’t want to.]]></summary>
+        
+    </entry>
+    
+    <entry>
+        
+        <title type="html">The roadmap for 2025</title>
+        <link href="https://partout.io/2025/03/the-roadmap-for-2025/" rel="alternate" type="text/html" title="The roadmap for 2025" />
+        <published>2025-03-17T00:00:00+01:00</published>
+        <updated>2025-03-17T00:00:00+01:00</updated>
+        <id>https://partout.io/2025/03/the-roadmap-for-2025</id>
+        <content type="html" xml:base="https://partout.io/2025/03/the-roadmap-for-2025/"><![CDATA[<p>Recently, I made <a href="https://github.com/orgs/partout-io/projects/9">my current backlog</a> public. I like to share what I’m working on, and in future posts, I’ll talk about how GitHub Projects helps me plan the development of Passepartout without losing my mind.</p>
 
-<p><img src="/s/posts/2025-07-13-01.png" alt="Snapshot of the new preference" /></p>
+<p>Here I present a sneak peek of what 2025 has been so far, and what I envision for the remainder of the year.</p>
 
-<p>By enabling the “Modern cryptography” preference, Passepartout will prefer the new cross-platform implementations over the historical Apple-only code. This is an experimental feature today, which means that connectivity might still be unstable, but the payoff is a dramatic boost in networking performance, more features, and prompt bugfixes.</p>
+<h2 id="short-term">Short-term</h2>
 
-<h2 id="a-way-to-support-cross-platform-development">A way to support cross-platform development</h2>
+<h3 id="stability-again">Stability, again</h3>
 
-<p>Testing modern cryptography today is a great way to support the project, as Passepartout will default to modern cryptography on non-Apple platforms. Switching to it and providing feedback will contribute to a robust Windows/Linux/Android MVP in the future.</p>
+<p>Reaching stability after rewriting Passepartout v3 has been <em>extremely</em> challenging. Despite being a mid-to-small project, it’s insanely hard to keep track of all the tiny details and edge cases covered in such a long development history. Regressions (i.e. features that used to work but are broken by an update) are just inevitable.</p>
 
-<p>The feature is available to everybody, free and paying customers.</p>
+<p>I wonder how many people have realized that <a href="https://github.com/partout-io/passepartout/releases">Passepartout has seen 14 updates</a> in less than two months. The criticism, the problems with in-app purchases, and the unforgiving reviews that most customers don’t care to update when a problem is fixed. The funniest part was those blaming me for being a “money grabber” at a time when the cost/benefit ratio of working on Passepartout was at a historical minimum. I worked up to 100h/week while seeing sales going down 60%.</p>
 
-<p>You can read articles on my website about how I’m making Passepartout and its backend, <a href="https://github.com/partout-io/partout">Partout</a>, a cross-platform application.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="app-store" /><category term="cross-platform" /><category term="openvpn" /><category term="swift" /><summary type="html"><![CDATA[As mentioned in an earlier post, I’ve invested a good part of the recent months in porting Passepartout on non-Apple platforms. Version 3.5.4 quietly brings to life the first milestone of this initiative, which is opting into modern cryptography.]]></summary></entry><entry><title type="html">The Passepartout Mac app is now available outside the App Store</title><link href="https://partout.io/2025/06/the-mac-app-is-now-available-outside-the-app-store/" rel="alternate" type="text/html" title="The Passepartout Mac app is now available outside the App Store" /><published>2025-06-02T00:00:00+02:00</published><updated>2025-06-02T00:00:00+02:00</updated><id>https://partout.io/2025/06/the-mac-app-is-now-available-outside-the-app-store</id><content type="html" xml:base="https://partout.io/2025/06/the-mac-app-is-now-available-outside-the-app-store/"><![CDATA[<p>Today, I’m thrilled to announce that the Passepartout Mac app can be <a href="https://passepartoutvpn.app/#app-mac">finally downloaded without the App Store</a>, and soon even via the <a href="https://github.com/orgs/partout-io/discussions/1244">Homebrew Cask</a>. It took serious work for it to take off, but after a few weeks of daily usage it seems to behave as expected.</p>
+<p>But I’m still alive!</p>
 
-<p>There are still limitations in that the app, for now, doesn’t support payments. This means that paid features are not available (yet), but they will be introduced at a later time:</p>
+<h3 id="providers-api">Providers API</h3>
+
+<p>The JSON API of Passepartout has been a drag for too long. The time has come to rework it because it’s also a privacy concern for providers, API calls should be authenticated. The outcome will be a better overall integration and support for WireGuard in providers. Mullvad is likely to be the first one because of the <a href="https://www.reddit.com/r/mullvadvpn/comments/1gmf2id/removing_openvpn_15th_january_2026_blog_mullvad/">more stringent deadline</a>.</p>
+
+<h3 id="standalone-mac-release">Standalone Mac release</h3>
+
+<p>This is the one I’m mostly excited about: releasing Passepartout as a .dmg for macOS, outside of the App Store. The app will be limited to free features until I implement a way to receive payments without the App Store.</p>
+
+<h2 id="mid-term">Mid-term</h2>
+
+<h3 id="more-providers">More providers</h3>
+
+<p>A direct consequence of a better-designed API is making room for more providers.</p>
+
+<h3 id="more-protocols">More protocols</h3>
+
+<p>I’d rather disclose this later, but I’d like to extend the suite of supported VPN protocols. Maybe more than just VPN.</p>
+
+<h2 id="long-term">Long-term</h2>
+
+<h3 id="new-platforms">New platforms</h3>
+
+<p>A long-term goal that will not make it to 2025, but that’s been on the back of my head, is opening up to non-Apple platforms. There’s nothing concrete yet, but I’ve been designing the new codebase with this in mind.</p>
+
+<h2 id="the-app-is-already-better-than-v2">The app is already better than v2</h2>
+
+<p>Lastly, I want to spend some words on the new app.</p>
+
+<p>We usually take things that work for granted and complain about things that don’t. It’s human nature. Over the years, I learned that a silent customer is a happy customer and that a noisy one may be right, but not that often.</p>
+
+<p>Even when the update was receiving the biggest hate, I knew that the app would be better, but I could not blame the users “for not seeing it”. An app like Passepartout is best when you don’t notice that it’s running.</p>
+
+<p>I know that the app is better from an engineering perspective. Let me tell you, instead, why v3 is better <em>as an user</em>:</p>
 
 <ul>
-  <li>Apple TV</li>
-  <li>iCloud</li>
-  <li>Network settings</li>
-  <li>On-demand</li>
-  <li>OTP</li>
-  <li>Providers</li>
+  <li>Better battery consumption</li>
+  <li>Super-low crash rate</li>
+  <li>Native Mac app</li>
+  <li>Mac menu consistent with the app</li>
+  <li>Per-profile iCloud sync</li>
+  <li>TV app is beautiful and sync is reliable</li>
+  <li>Shortcuts run in the background</li>
+  <li>Stable UI with consistent L&amp;F and animations</li>
+  <li>Much better provider server selection</li>
+  <li>Custom light/dark appearance</li>
+  <li>Interactive login</li>
+  <li>Route custom DNS inside/outside VPN</li>
+  <li>Edit WireGuard configurations</li>
+  <li>Convenient OTP field for OpenVPN (WIP)</li>
+  <li>Plenty of resolved OpenVPN bugs
+    <ul>
+      <li>Connection stuck randomly</li>
+      <li>Occasionally stuck when Wi-Fi/Mobile roaming</li>
+      <li>Regularly stuck when back from sleep</li>
+      <li>Disconnection on “Message too long”</li>
+      <li>Disconnection on “No buffer space available”</li>
+      <li>Disconnection during renegotiations</li>
+      <li>Slow to reconnect</li>
+      <li>Memory leaks</li>
+      <li>…</li>
+    </ul>
+  </li>
 </ul>
 
-<p>You can read a side story about the development of this new, standalone Mac app on my website.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="app-store" /><category term="mac" /><summary type="html"><![CDATA[Today, I’m thrilled to announce that the Passepartout Mac app can be finally downloaded without the App Store, and soon even via the Homebrew Cask. It took serious work for it to take off, but after a few weeks of daily usage it seems to behave as expected.]]></summary></entry><entry><title type="html">Introducing the JavaScript API</title><link href="https://partout.io/2025/04/introducing-the-javascript-api/" rel="alternate" type="text/html" title="Introducing the JavaScript API" /><published>2025-04-24T00:00:00+02:00</published><updated>2025-04-24T00:00:00+02:00</updated><id>https://partout.io/2025/04/introducing-the-javascript-api</id><content type="html" xml:base="https://partout.io/2025/04/introducing-the-javascript-api/"><![CDATA[<p>While I invest a lot in making the software architecture as modular as I can, I haven’t spent as much time in documenting <em>how</em> to start contributing to the codebase. I know myself how intimidating it is to submit a PR to someone else’s repository, so it’s crucial that we, the maintainers, provide a viable entry point to those willing to collaborate. A welcoming, non-judging community also reduces the friction of the first public contribution.</p>
-
-<p>One part that I’ve always found potentially accessible was the Providers API, which is how Passepartout auto-compiles VPN configurations for a plethora of provider servers. Nevertheless, no one ever contributed a single provider, and no wonder: providers were generated in CI with a convoluted set of undocumented Ruby scripts. Who on Earth would want to touch that mess?</p>
-
-<p>When I found out about <a href="https://developer.apple.com/documentation/javascriptcore">JavaScriptCore</a> to solve a different problem, I suddenly realized how scripting could be a lower barrier to enter the Passepartout codebase, as there are way more JavaScript than Swift developers out there.</p>
-
-<p>With the help of AI, I rapidly converted the old Ruby legacy to a brand new <a href="https://github.com/partout-io/api-source">Node.js implementation</a> that most developers would find easy to understand, develop, and test without even installing the app. Then I started documenting <a href="https://github.com/partout-io/api-source?tab=readme-ov-file#new-providers">how to submit a provider</a> step by step. This doesn’t imply that people will start adding new providers today, but offering accessible tools and documentation is a <em>strict</em> requirement for that to happen.</p>]]></content><author><name>Davide De Rosa</name></author><category term="announcements" /><category term="development" /><category term="javascript" /><summary type="html"><![CDATA[While I invest a lot in making the software architecture as modular as I can, I haven’t spent as much time in documenting how to start contributing to the codebase. I know myself how intimidating it is to submit a PR to someone else’s repository, so it’s crucial that we, the maintainers, provide a viable entry point to those willing to collaborate. A welcoming, non-judging community also reduces the friction of the first public contribution.]]></summary></entry><entry><title type="html">Porting Passepartout to Windows</title><link href="https://partout.io/2025/04/porting-passepartout-to-windows/" rel="alternate" type="text/html" title="Porting Passepartout to Windows" /><published>2025-04-14T00:00:00+02:00</published><updated>2025-04-14T00:00:00+02:00</updated><id>https://partout.io/2025/04/porting-passepartout-to-windows</id><content type="html" xml:base="https://partout.io/2025/04/porting-passepartout-to-windows/"><![CDATA[<p>As <a href="">Partout</a>, my Swift framework for VPN and network configuration on Apple devices, has slowly gained shape, I set foot in an ambitious and novel, pioneering goal: <strong>making Partout a truly multiplatform Swift library</strong>.</p>
-
-<p>It’s challenging, but it’s fun, and it’s the way to port <a href="">Passepartout</a> beyond the Apple platforms. So, here, I will progressively share my discoveries and encourage other people to give Swift a chance as a portable language. The language itself is fantastic. Using it outside Xcode? Not as much, but I’ve observed the trends over the years, and overall, things are getting better.</p>
-
-<p>Bear with me, this is a <em>very experimental</em> work in progress, that’s why I’d rather start with architectural concepts, and delve into technical details only after confirming that my approaches do well in practice.</p>]]></content><author><name>Davide De Rosa</name></author><category term="cross-platform" /><category term="development" /><category term="swift" /><category term="windows" /><summary type="html"><![CDATA[As Partout, my Swift framework for VPN and network configuration on Apple devices, has slowly gained shape, I set foot in an ambitious and novel, pioneering goal: making Partout a truly multiplatform Swift library.]]></summary></entry><entry><title type="html">Who cares about performance?</title><link href="https://partout.io/2025/03/who-cares-about-performance/" rel="alternate" type="text/html" title="Who cares about performance?" /><published>2025-03-25T00:00:00+01:00</published><updated>2025-03-25T00:00:00+01:00</updated><id>https://partout.io/2025/03/who-cares-about-performance</id><content type="html" xml:base="https://partout.io/2025/03/who-cares-about-performance/"><![CDATA[<p>While many people copy and paste unoriginal thoughts about AI and the so-called “vibe coding”, it seems that what used to make software valuable is constantly put aside. If you try to argue that tech <em>does</em> matter in a tech-oriented product, they will tell you that:</p>
-
-<ul>
-  <li>Business is more important than engineering</li>
-  <li>Software is useless if it doesn’t make money</li>
-  <li>Users only care about features</li>
-  <li>Devices are powerful, performance doesn’t matter</li>
-  <li>Internet is fast, a few more GBs won’t hurt</li>
-</ul>
-
-<p>And many more dumb takes. This is the typical mentality by which consultancy firms produce the most mediocre products you will ever find.</p>
-
-<p>I don’t want to delve into this endless – and hopeless – topic. Instead, I want to tell you a little story of how easy it is to lose control of software <em>performance</em>, and how the understanding of programming fundamentals keeps us in touch with reality. This has never been more important with the fast-paced opportunities that LLMs offer today.</p>
-
-<h3 id="can-you-afford-low-performance">Can you afford low performance?</h3>
-
-<p>I’m far from being a low-level programmer, yet I know C and the fundamentals of how things happen below the code.</p>
-
-<p><a href="">Passepartout</a> is a networking app mostly dealing with VPN connections. At least in the tunnel context, performance <em>does</em> matter. When it comes to OpenVPN in particular, it’s very hard to compete with a pure C codebase – the official library – when you also have to account for the overhead of the Swift runtime. Let’s not forget about the <a href="https://developer.apple.com/forums/thread/73148">strict memory limits</a> of Network Extension either. The time I spent on profiling to improve efficiency, resolve memory leaks, and reduce the crash rate, among other things, is pretty massive.</p>
-
-<p>Two months ago, a user reported a regression in the OpenVPN negotiation where the handshake would never complete. I could implement a fix quickly, yet the handshake took 4x longer than with the obsolete TunnelKit. A whopping and unacceptable 20-25s vs 5s negotiation!</p>]]></content><author><name>Davide De Rosa</name></author><category term="development" /><category term="swift" /><summary type="html"><![CDATA[While many people copy and paste unoriginal thoughts about AI and the so-called “vibe coding”, it seems that what used to make software valuable is constantly put aside. If you try to argue that tech does matter in a tech-oriented product, they will tell you that:]]></summary></entry></feed>
+<p>Thanks to those who are trusting the process.</p>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[Recently, I made my current backlog public. I like to share what I’m working on, and in future posts, I’ll talk about how GitHub Projects helps me plan the development of Passepartout without losing my mind.]]></summary>
+        
+    </entry>
+    
+</feed>
