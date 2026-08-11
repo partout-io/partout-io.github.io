@@ -14,7 +14,7 @@
 
 
 <head>
-    <title>Discontinuining support for the ProtonVPN provider · Partout</title>
+    <title>Q3 2026: Android, faster OpenVPN, and Providers · Partout</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,21 +28,21 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Partout" />
-    <meta property="og:title" content="Discontinuining support for the ProtonVPN provider" />
+    <meta property="og:title" content="Q3 2026: Android, faster OpenVPN, and Providers" />
     <meta property="og:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
     <meta property="og:image" content="https://partout.io/s/partout.png?1786482407" />
-    <meta property="og:url" content="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" />
+    <meta property="og:url" content="https://partout.io/2026/08/android-faster-openvpn-and-providers/" />
 
     <!-- Twitter -->
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@keeshux" />
-    <meta name="twitter:title" content="Discontinuining support for the ProtonVPN provider" />
+    <meta name="twitter:title" content="Q3 2026: Android, faster OpenVPN, and Providers" />
     <meta name="twitter:description" content="Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product." />
     <meta name="twitter:image" content="https://partout.io/s/partout.png?1786482407" />
-    <meta name="twitter:url" content="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" />
+    <meta name="twitter:url" content="https://partout.io/2026/08/android-faster-openvpn-and-providers/" />
 
-    <link rel="canonical" href="https://partout.io/2025/07/discontinuing-support-for-the-protonvpn-provider/" />
+    <link rel="canonical" href="https://partout.io/2026/08/android-faster-openvpn-and-providers/" />
     <link rel="author" href="https://davidederosa.com" />
 
     <link rel="stylesheet" href="/s/main.css?1786482407" />
@@ -84,15 +84,30 @@ gtag('config', 'G-89X200F7CB');
             <main>
     <article class="post post-full" itemscope itemtype="https://schema.org/Article">
         <header>
-            <h2 itemprop="name">Discontinuining support for the ProtonVPN provider</h2>
-            <p class="post-date" itemprop="datepublished">Jul 18, 2025</p>
+            <h2 itemprop="name">Q3 2026: Android, faster OpenVPN, and Providers</h2>
+            <p class="post-date" itemprop="datepublished">Aug 11, 2026</p>
         </header>
         <section class="post-body">
-            <p>Recently, I realized that the public ProtonVPN API <a href="https://www.reddit.com/r/ProtonVPN/comments/1kr3yu9/byebye_api_power_users_have_been_shut_out_by/">was made private</a>, which in turn left the infrastructure in Passepartout outdated for a while. In my opinion, these are reasonable moves by public providers that don’t want their customers to use third party apps, because it would require additional customer support. While I believe that offering API plans for integrating alternative clients or resellers would be a nice addition, it’s absolutely fine if they don’t want to.</p>
+            <h2 id="passepartout-for-android">Passepartout for Android</h2>
 
-<p>Therefore, the ProtonVPN provider will be removed next week from the supported Passepartout providers.</p>
+<p>The first time I announced an Android release was towards <a href="/2025/11/update-q4-2025/#android-mvp">the end of 2025</a>, with a smoke test dating <a href="https://www.reddit.com/r/passepartout/comments/1n3l592/hey_i_made_it_work_on_android/">even earlier</a>. Passepartout for Android became a reality two months ago, when I launched a small private beta. If you’re interested in testing it, send an email to <a href="mailto:beta@passepartoutvpn.app">beta@passepartoutvpn.app</a>. The new, still basic app should launch on the Google Play Store in September or October, but it needs responsible testers first.</p>
 
-<p>You can find more information <a href="https://github.com/partout-io/partout/pull/129">in the related PR</a>.</p>
+<h2 id="faster-openvpn">Faster OpenVPN</h2>
+
+<p>While working on the Android app, I rewrote the networking layer backing the OpenVPN implementation of Partout. This was part of a much bigger rewrite that will be activated in the upcoming months, but the results in OpenVPN were already impressive. Even more on Android!</p>
+
+<p>Users would hardly notice changes during daily usage, but a simple speed test in Passepartout should reveal significantly higher speeds than the official apps like OpenVPN Connect, especially on fast connections. Give it a try, I’m curious.</p>
+
+<h2 id="issues-with-profiles">Issues with profiles</h2>
+
+<p>I found the time to address some <a href="https://github.com/partout-io/passepartout/milestone/95?closed=1">long-standing issues</a> with Apple profiles. All apps now use the keychain as the source of truth for profile storage, which is both fast and reliable. The first effect is improved performance, synchronization, and deduplication. The second one is that Mac profiles finally behave as expected: they survive account switches, and App Store and .dmg profiles <a href="https://github.com/partout-io/passepartout/issues/1496">don’t overwrite each other</a>.</p>
+
+<h2 id="providers-will-be-discontinued-soon">Providers will be discontinued soon</h2>
+
+<p>As mentioned in the past, and several times, <a href="https://github.com/orgs/partout-io/discussions/1904#discussioncomment-17851292">provider modules will be discontinued</a>, and it’s a decision I won’t back off from. Providers add great complexity, don’t work as I wish, therefore I don’t feel like charging for the feature. Given the lack of energy and motivation to improve it, I’d rather drop the feature and maybe reintroduce it in the future, properly designed.</p>
+
+<p>Today, the users of Passepartout have proved to have other priorities, like self-hosting, privacy, and new platforms. I want to focus entirely on that demand.</p>
+
 
             <p><a href="/blog/">Back to index</a></p>
         </section>
