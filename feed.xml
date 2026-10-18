@@ -3,7 +3,7 @@
     <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
     <link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://partout.io/" rel="alternate" type="text/html" />
-    <updated>2026-08-11T23:06:47+02:00</updated>
+    <updated>2026-10-18T12:45:24+02:00</updated>
     <id>https://partout.io/feed.xml</id>
     <title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title>
     <subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle>
@@ -15,6 +15,44 @@
     
     
     
+    
+    <entry>
+        
+        <title type="html">Q4 2026: Zig, Windows, and setbacks</title>
+        <link href="https://partout.io/2026/10/zig-windows-and-setbacks/" rel="alternate" type="text/html" title="Q4 2026: Zig, Windows, and setbacks" />
+        <published>2026-10-18T00:00:00+02:00</published>
+        <updated>2026-10-18T00:00:00+02:00</updated>
+        <id>https://partout.io/2026/10/zig-windows-and-setbacks</id>
+        <content type="html" xml:base="https://partout.io/2026/10/zig-windows-and-setbacks/"><![CDATA[<h2 id="the-zig-rewrite">The Zig rewrite</h2>
+
+<p>As I mentioned <a href="https://davidederosa.com/2026/08/i-joined-the-rewrite-bandwagon/">in a personal post</a>, last summer I fully ported Partout from Swift to the Zig language. The benefits of the migration are countless, and the legacy Swift layer was eventually removed from the official releases last month. The fast rollout brought the apps back to their original footprint, with the Mac .dmg artifacts even below the 10MB threshold. The removal of public VPN providers was also part of the rollout.</p>
+
+<p>The reason why I chose Zig is because it dramatically simplified the development of the framework on non-Apple platforms, where Swift proved to be a serious bottleneck in terms of support, tooling, binary size, and whatnot. It is certainly harder to write correct code in Zig than in Swift, but the long-term tradeoff is brutally convenient.</p>
+
+<h2 id="cross-platform-integration">Cross-platform integration</h2>
+
+<p>I know, it’s literally taking ages, but it’s very challenging to pick a software design that fits platforms where the native VPN integration differs so much. Let alone the different programming languages and the machinery of FFI.</p>
+
+<p>Truth to be said, except for a few UI leftovers, the Android app could be released in a week of trivial work. However, I decided to squeeze a little more on the cross-platform design because the way VPNs work on Windows is radically different, and I don’t want to find myself doing another rewrite in a month.</p>
+
+<p>So yeah, Android is still on hold, but on the other hand Windows development has advanced immensely and will see an MVP by the end of the year. I dare to say that Passepartout will be the most innovative VPN app on Windows in particular.</p>
+
+<h2 id="setbacks-in-passepartout">Setbacks in Passepartout</h2>
+
+<p>Overall, I did a crazy lot of work without apparent changes to the Passepartout end-user apps, and it’s harder and harder to justify that customers pay for an app that seemingly hasn’t added major features in a year. This is a very tiring feeling that could lead some to burnout.</p>
+
+<p>But I know inside that all this work has a deep meaning to the future of the project, and soon a day will come where what I have planned will be unlocked all at once. Let’s say that 2026 has been kind of “all work no play”, while 2027 will be more fun.</p>
+
+<p>Stay tuned.</p>]]></content>
+        <author>
+            <name>Davide De Rosa</name>
+            
+        </author>
+        
+        
+        <summary type="html"><![CDATA[The Zig rewrite]]></summary>
+        
+    </entry>
     
     <entry>
         
