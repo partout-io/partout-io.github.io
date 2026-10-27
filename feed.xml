@@ -3,7 +3,7 @@
     <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
     <link href="https://partout.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://partout.io/" rel="alternate" type="text/html" />
-    <updated>2026-10-18T12:45:24+02:00</updated>
+    <updated>2026-10-27T08:43:14+01:00</updated>
     <id>https://partout.io/feed.xml</id>
     <title type="html">Partout is the easiest way to build cross-platform tunnel apps.</title>
     <subtitle>Partout is the easiest way to build cross-platform tunnel apps. Set up a VPN in a few lines so that you can focus on your product.</subtitle>
@@ -33,7 +33,7 @@
 
 <p>I know, it’s literally taking ages, but it’s very challenging to pick a software design that fits platforms where the native VPN integration differs so much. Let alone the different programming languages and the machinery of FFI.</p>
 
-<p>Truth to be said, except for a few UI leftovers, the Android app could be released in a week of trivial work. However, I decided to squeeze a little more on the cross-platform design because the way VPNs work on Windows is radically different, and I don’t want to find myself doing another rewrite in a month.</p>
+<p>Truth to be told, except for a few UI leftovers, the Android app could be released in a week of trivial work. However, I decided to squeeze a little more on the cross-platform design because the way VPNs work on Windows is radically different, and I don’t want to find myself doing another rewrite in a month.</p>
 
 <p>So yeah, Android is still on hold, but on the other hand Windows development has advanced immensely and will see an MVP by the end of the year. I dare to say that Passepartout will be the most innovative VPN app on Windows in particular.</p>
 
